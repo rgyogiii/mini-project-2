@@ -58,7 +58,6 @@ const Final = () => {
             dots: 3
           }
         },
-       
       ]
     }
   return (
