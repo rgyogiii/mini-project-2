@@ -35,8 +35,8 @@ const collectibles = [{
     },
     {
         id: 6,
-        title: 'ASSASSINS CREED VALHALLA EIVOR MALE FIGURINE',
-        price: "₱3,295.00",
+        title: 'NIER REPLICANT VER. 1.22474487139 BRING ARTS ACTION FIGURE (YOUNG PROTAGONIST)',
+        price: "₱3,995.00",
         imageName: "collectible6.jpg",
         description: "to follow na lang since single page pa lang naman"
     },
