@@ -1,0 +1,61 @@
+.title {
+    font-size: 14px !important;
+}
+
+.price {
+    color: black !important;
+}
+
+.rating h6 {
+    font-size: 13px !important;
+}
+.rating{
+    margin-left: 137px !important;
+}
+
+.image-hover button {
+    width: 80px;
+    height: 30px;
+    font-size: 10px;
+    position: absolute !important;
+}
+.fav-icon{
+    margin-left: 220px;
+    cursor: pointer;
+}
+.fav-icon:hover{
+    color: black !important;
+}
+.list{
+    box-shadow: 0 0 5px #ccc;
+}
+.final{
+    max-width: 1300px;
+}
+
+/* Slider CSS */
+.slick-slide>div {
+    margin: 0 10px;
+}
+
+.slick-list {
+    margin: 0 -10px;
+}
+.final {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.slick-prev {
+    background-color: #ccc !important;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+.slick-next {
+    background-color: #ccc !important;
+    border-radius: 50px;
+    z-index: 1;
+}
+
