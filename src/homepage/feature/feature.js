@@ -4,9 +4,11 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import featuredata from './featuredata'
+import Rating from "@mui/material/Rating";
+import Stack from "@mui/material/Stack";
 const Final = () => {
     const [isHovered, setHover] = useState(-1);
-
+    // const [value, setValue] = React.useState<number | null>(2);
     const showButton = (i)=>{
         setHover(i)
     }
@@ -82,7 +84,19 @@ const Final = () => {
         <span className='fs-6 text-muted px-1'>{item.price}</span>
         </div>
         <div className="rating fs-1 position-absolute">
-          <h6 className='d-flex'><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><span className='mx-1'>{item.reviewNum}</span></h6>
+          <h6 className='d-flex'>  
+          <Rating
+            name="half-rating-read"
+            defaultValue={item.ratings}
+            precision={0.5}
+            readOnly 
+            sx={{
+            fontSize: 15,
+            color: "#121111",
+          }}  
+            />
+            <span>{item.reviewNum}</span>
+          </h6>
         </div>
         </div>
         </div>

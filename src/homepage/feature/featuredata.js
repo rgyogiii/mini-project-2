@@ -3,7 +3,7 @@ const featuredata = [{
         title: 'PlayStation 5 HFW Bundle...',
         price: "₱41,860.00",
         imageName: "/img/consoles/console1.jpg",
-        
+        ratings: 4.5,
         description: "to follow na lang since single page pa lang naman",
         reviewNum: '(15)'
     },
@@ -12,6 +12,7 @@ const featuredata = [{
         title: 'Monster Hunter Lioleia...',
         price: "₱4,495.00",
         imageName: "/img/collectibles/collectible1.jpg",
+        ratings: 3.5,
         description: "to follow na lang since single page pa lang naman",
         reviewNum: '(23)'
     },
@@ -20,6 +21,7 @@ const featuredata = [{
         title: 'Lenovo Legion T5 ...',
         price: "₱109,995.00",
         imageName: "/img/prebuilt/prebuilt1.jpg",
+        ratings: 2.5,
         description: "to follow na lang since single page pa lang naman",
         reviewNum: '(64)'
     },
@@ -28,6 +30,7 @@ const featuredata = [{
         title: 'Asus ROG Zephyrus G15 ...',
         price: "₱139,995.00",
         imageName: "/img/laptop/laptop4.jpg",
+        ratings: 4,
         description: "to follow na lang since single page pa lang naman",
         reviewNum: '(22)'
     },
@@ -36,6 +39,7 @@ const featuredata = [{
         title: 'Nintendo Switch ...',
         price: "₱17,895.00",
         imageName: "/img/consoles/console6.jpg",
+        ratings: 5,
         description: "to follow na lang since single page pa lang naman",
         reviewNum: '(19)'
     },
@@ -44,6 +48,7 @@ const featuredata = [{
         title: 'Xbox Series S ...',
         price: "₱18,495.00",
         imageName: "/img/consoles/console4.jpg",
+        ratings: 4.5,
         description: "to follow na lang since single page pa lang naman",
         reviewNum: '(87)'
     },
@@ -52,6 +57,7 @@ const featuredata = [{
         title: 'Capcom Figure Builder...',
         price: "₱2,950.00",
         imageName: "/img/collectibles/collectible2.jpg",
+        ratings: 3.5,
         description: "to follow na lang since single page pa lang naman",
         reviewNum: '(96)'
     },
@@ -60,6 +66,7 @@ const featuredata = [{
         title: 'Asus ROG Strix G15DH ...',
         price: "₱54,995.00",
         imageName: "/img/prebuilt/prebuilt5.jpg",
+        ratings: 3,
         description: "to follow na lang since single page pa lang naman",
         reviewNum: '(32)'
     },
@@ -68,6 +75,7 @@ const featuredata = [{
         title: 'Ayaneo Next AMD Ryzen 7...',
         price: "₱65,995.00",
         imageName: "/img/consoles/console9.jpg",
+        ratings: 4,
         description: "to follow na lang since single page pa lang naman",
         reviewNum: '(62)'
     },
@@ -76,6 +84,7 @@ const featuredata = [{
         title: 'Nintendo Amiibo ...',
         price: "₱595.00",
         imageName: "/img/collectibles/collectible8.jpg",
+        ratings: 2.5,
         description: "to follow na lang since single page pa lang naman",
         reviewNum: '(76)'
     },
@@ -84,6 +93,7 @@ const featuredata = [{
         title: 'Lenovo Legion 5 ...',
         price: "₱104,995.00",
         imageName: "/img/laptop/laptop1.jpg",
+        ratings: 3.5,
         description: "to follow na lang since single page pa lang naman",
         reviewNum: '(21)'
     },
@@ -92,6 +102,7 @@ const featuredata = [{
         title: 'GDP Pocket 3 i7...',
         price: "₱54,995.00",
         imageName: "/img/consoles/console10.jpg",
+        ratings: 3,
         description: "to follow na lang since single page pa lang naman",
         reviewNum: '(10)'
     },
@@ -100,6 +111,7 @@ const featuredata = [{
         title: 'Lenovo Legion Tower ...',
         price: "₱79,995.00",
         imageName: "/img/prebuilt/prebuilt3.jpg",
+        ratings: 4.5,
         description: "to follow na lang since single page pa lang naman",
         reviewNum: '(52)'
     },
@@ -108,6 +120,7 @@ const featuredata = [{
         title: 'NIER REPLICANT Action Figure ...',
         price: "₱3,295.00",
         imageName: "/img/collectibles/collectible6.jpg",
+        ratings: 5,
         description: "to follow na lang since single page pa lang naman",
         reviewNum: '(62)'
     },
@@ -116,6 +129,7 @@ const featuredata = [{
         title: 'Gigabyte A7 ...',
         price: "₱99,995.00",
         imageName: "/img/laptop/laptop9.jpg",
+        ratings: 2,
         description: "to follow na lang since single page pa lang naman",
         reviewNum: '(13)'
     },
@@ -124,6 +138,7 @@ const featuredata = [{
         title: 'HP Victus 16 ...',
         price: "₱59,995.00",
         imageName: "/img/laptop/laptop6.jpg",
+        ratings: 3.5,
         description: "to follow na lang since single page pa lang naman",
         reviewNum: '(69)'
     },
@@ -132,6 +147,7 @@ const featuredata = [{
         title: 'Acer Predator Helios 300 ...',
         price: "₱74,999.00",
         imageName: "/img/laptop/laptop7.jpg",
+        ratings: 5,
         description: "to follow na lang since single page pa lang naman",
         reviewNum: '(16)'
     },
@@ -140,6 +156,7 @@ const featuredata = [{
         title: 'Acer Nitro 5 ...',
         price: "₱53,899.00",
         imageName: "/img/laptop/laptop8.jpg",
+        ratings: 4.5,
         description: "to follow na lang since single page pa lang naman",
         reviewNum: '(12)'
     },
@@ -148,6 +165,7 @@ const featuredata = [{
         title: 'Lenovo IdeaCentre 3...',
         price: "₱46,995.00",
         imageName: "/img/prebuilt/prebuilt6.jpg",
+        ratings: 3,
         description: "to follow na lang since single page pa lang naman",
         reviewNum: '(15)'
     },
@@ -156,6 +174,7 @@ const featuredata = [{
         title: 'Trials of Mana...',
         price: "₱9,495.00",
         imageName: "/img/collectibles/collectible4.jpg",
+        ratings: 4.5,
         description: "to follow na lang since single page pa lang naman",
         reviewNum: '(13)'
     },
