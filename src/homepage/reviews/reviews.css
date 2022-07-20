@@ -1,52 +1,52 @@
-.review-data{
-    background-color: rgb(248,252,255);
+
+.container {
+    font-family: 'Barlow', sans-serif;
+
 }
-.bg-color{
-    max-width: 1500px;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 50px;  
-}
-.container{
-     
-}
-.card img{
+
+.container h2 {
+    font-family: 'Tungsten Bold', sans-serif;
+    letter-spacing: 1px !important;
+    font-size: 38px;
     cursor: pointer;
 }
 
-.card{
+.card img {
+    cursor: pointer;
+}
+
+.card {
     max-width: 400px;
     min-width: 300px;
     max-height: 434px;
-    min-height: 500px;
-    background-color: rgb(248,252,255);
+    min-height: 470px;
     border: none;
-    
+
 }
 
-.card h5{
-    color: rgb(150, 142, 142);
+.card h5 {
+    color: #000000;
     cursor: pointer;
 }
-.card h5:hover{
-    color: rgb(0, 0, 0);
+
+.card h5:hover {
     text-decoration: underline;
-    
-}
-.rating{
-    font-size: 1000px;
 }
 
-.reviewed .comment{
+.reviewed span{
+    color: #000000 !important;
+}
+.reviewed span:last-child{
     max-width: 290px;
     font-size: 13px;
 }
 
-.footer span:first-child{
+.footer span:first-child {
     font-size: 0.75rem;
     cursor: pointer;
 }
-.footer span:first-child:hover{
+
+.footer span:first-child:hover {
     text-decoration: underline;
     color: rgb(0, 0, 0) !important;
 }

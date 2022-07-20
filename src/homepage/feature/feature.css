@@ -1,22 +1,38 @@
 .title {
     font-size: 14px !important;
+    cursor: pointer;
+}
+.title:hover{
+    text-decoration: underline ;
 }
 
 .price {
-    color: black !important;
+    color:  #000000 !important;
+}
+
+.card-list {
+    background-color: #fff;
+    max-width: 310px;
+    max-height: 374px;
 }
 
 .rating h6 {
     font-size: 13px !important;
+    color:  #000000 !important;
 }
+
+.image-hover div {
+    cursor: pointer;
+}
+.image-hover
 
 .rating {
     margin-left: 137px !important;
 }
 
 .image-hover button {
-    width: 80px;
     height: 30px;
+    max-width: 80px;
     font-size: 10px;
     position: absolute !important;
 }
@@ -29,21 +45,18 @@
     color: black !important;
 }
 
-.list {
-    box-shadow: 0 0 5px #ccc;
-}
-
 .final {
-    max-width: 1300px;
-    width: 70%;
-    margin: 0 auto;
     margin-top: 50px;
+    font-family: 'Barlow', sans-serif;
 }
-.list{
-    max-height: 360px;
-
+.final h2{
+    font-size: 48px;
+    font-family: 'Tungsten Bold', sans-serif;
 }
-
+.revNum{
+    position: relative;
+    bottom: 3px;
+}
 
 /* Slider CSS */
 .slick-slide>div {

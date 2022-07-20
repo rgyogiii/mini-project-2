@@ -39,9 +39,8 @@ var settings = {
       ]
     };
   return (
-    <div className='review-data mt-5 pb-5'>
-    <div className="bg-color">
-    <h4 className='pt-5 mx-5'>See our top-rated products' reviews</h4>
+    <div className='container review-data mt-5 pb-5'>
+    <h2>See our top-rated products' reviews</h2>
         <Slider {...settings}>
         {reviewData.map((item) =>(
         <div className="container">     
@@ -102,7 +101,7 @@ var settings = {
             </div>
             <div className="reviewed d-flex flex-column mt-5">
                 <span className='fs-6'>Review by <span className='fw-bold fs-6'>{item.name}</span></span>
-                <span className='comment mb-5'>{item.comment}</span>
+                <span className='mb-5'>{item.comment}</span>
             </div>
             <div className="footer d-flex justify-content-between">
               <span className='text-muted'>See all reviews</span>
@@ -115,7 +114,7 @@ var settings = {
         </Slider>
     </div>
     
-    </div>
+
   )
 }
 
