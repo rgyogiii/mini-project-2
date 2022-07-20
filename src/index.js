@@ -13,12 +13,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Navbar/>
-<<<<<<< HEAD
-    <App />
-=======
     <App/>
     <Homepage/>
     <Footer />
->>>>>>> 8652d737ac0d82644853236151ada30957f117b4
   </React.StrictMode>
 );
