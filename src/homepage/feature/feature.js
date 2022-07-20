@@ -25,7 +25,7 @@ const Final = () => {
         {
           breakpoint: 1100,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1,
             infinite: true,
             dots: 5
@@ -66,7 +66,7 @@ const Final = () => {
     <h2>Featured Products</h2>
         <Slider {...settings}>
             {featuredata && featuredata.map((item, i) =>(
-              <div className='card-list mb-5 pb-3 '>
+              <div className='card-list mb-5 pb-3'>
               <div className="image-hover">
         <div onMouseEnter={()=> showButton(i)} onMouseLeave={hideButton}>
         <div className='d-flex justify-content-center'><img src={item.imageName} width='250px' height='240px'/></div> <br/>

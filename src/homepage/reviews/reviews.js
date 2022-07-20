@@ -43,7 +43,7 @@ var settings = {
     <h2>See our top-rated products' reviews</h2>
         <Slider {...settings}>
         {reviewData.map((item) =>(
-        <div className="container">     
+        <div className="container mb-5">     
             <br />
             <div className="card px-4">
                 <h5>{item.title}</h5>
