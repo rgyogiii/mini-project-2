@@ -7,9 +7,9 @@ const navbar = () => {
       <div className="container">
           {/* logo */}
           <a className="navbar-brand order-2 me-5 pe-5 d-flex align-items-center" href="###">
-            <span className="fs-1 px-2">AR</span> 
-            <img src={process.env.PUBLIC_URL+"logo.svg"} height="70" alt="Araktek Logo"/>
-            <span className="fs-1 px-1">KTEK!</span> 
+            <span className="fs-1">AR</span> 
+            <img src={process.env.PUBLIC_URL+"logo.svg"} height="80" alt="Araktek Logo"/>
+            <span className="fs-1 px-2">KTEK</span> 
           </a>
 
           {/* searchbox */}
@@ -29,17 +29,21 @@ const navbar = () => {
 
           {/* navlist */}
           <ul className="navbar-nav ps-1 d-flex flex-row ms-auto order-3">
-            <li className="nav-item me-4">
+            <li className="nav-item me-3">
               <a className="nav-link" href="###">
                 <i className="bi bi-suit-heart"></i>
+                <span className="position-absolute translate-middle badge rounded-circle badge-notification">2</span>
               </a>
             </li>
-            <li className="nav-item me-4">
+            <li className="nav-item mx-3">
               <a className="nav-link" href="###">
                 <i className="bi bi-cart3"></i>
+
+                {/* badge */}
+                <span className="position-absolute translate-middle badge rounded-circle badge-notification">2</span>
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item ms-3">
               <a className="nav-link d-flex align-items-center" href="###">
                 <i className="bi bi-person-circle me-0"></i>
                 <i className="bi bi-caret-down-fill ms-1"></i>
@@ -48,7 +52,7 @@ const navbar = () => {
           </ul>
 
           {/* category */}
-          <div className="container pt-1 d-flex justify-content-center order-4">
+          <div className="container pt-2 d-flex justify-content-center order-4">
             <ul className="navbar-nav d-flex flex-row">
               <li className="nav-item me-4">
                 <a className="nav-link fw-bold" href="###">Sale</a>
