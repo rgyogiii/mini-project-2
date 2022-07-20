@@ -24,7 +24,10 @@
 .image-hover div {
     cursor: pointer;
 }
-.image-hover
+.product-image{
+    display: flex;
+    justify-content: center;
+}
 
 .rating {
     margin-left: 137px !important;
