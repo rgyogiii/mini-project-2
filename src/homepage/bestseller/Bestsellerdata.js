@@ -1,3 +1,12 @@
+const randomStar = () => {
+    const number= Math.floor(Math.random() * (5)) + 2;
+    return number
+}
+const randomReview = () => {
+    const number= Math.floor(Math.random() * (18) + 1);
+    return number
+}
+
 const Bestsellerdata = [
 {
     id: 1,
@@ -5,7 +14,8 @@ const Bestsellerdata = [
     price: "₱54,995.00",
     imageName: "/img/consoles/console10.jpg",
     description: "to follow na lang since single page pa lang naman",
-    reviewNum: '(10)'
+    ratings: randomStar(),
+    reviewNum: randomReview()
 },
 {
     id: 2,
@@ -13,7 +23,8 @@ const Bestsellerdata = [
     price: "₱3,295.00",
     imageName: "/img/collectibles/collectible6.jpg",
     description: "to follow na lang since single page pa lang naman",
-    reviewNum: '(62)'
+    ratings: randomStar(),
+    reviewNum: randomReview()
 },
 
 {
@@ -22,7 +33,8 @@ const Bestsellerdata = [
     price: "₱79,995.00",
     imageName: "/img/prebuilt/prebuilt3.jpg",
     description: "to follow na lang since single page pa lang naman",
-    reviewNum: '(52)'
+    ratings: randomStar(),
+    reviewNum: randomReview()
 },
 
 {
@@ -31,7 +43,8 @@ const Bestsellerdata = [
     price: "₱74,999.00",
     imageName: "/img/laptop/laptop7.jpg",
     description: "to follow na lang since single page pa lang naman",
-    reviewNum: '(16)'
+    ratings: randomStar(),
+    reviewNum: randomReview()
 },
 {
     id: 5,
@@ -39,7 +52,8 @@ const Bestsellerdata = [
     price: "₱53,899.00",
     imageName: "/img/laptop/laptop8.jpg",
     description: "to follow na lang since single page pa lang naman",
-    reviewNum: '(12)'
+    ratings: randomStar(),
+    reviewNum: randomReview()
 },
 {
     id: 6,
@@ -47,7 +61,8 @@ const Bestsellerdata = [
     price: "₱46,995.00",
     imageName: "/img/prebuilt/prebuilt6.jpg",
     description: "to follow na lang since single page pa lang naman",
-    reviewNum: '(15)'
+    ratings: randomStar(),
+    reviewNum: randomReview()
 },
 {
     id: 7,
@@ -55,7 +70,8 @@ const Bestsellerdata = [
     price: "₱99,995.00",
     imageName: "/img/laptop/laptop9.jpg",
     description: "to follow na lang since single page pa lang naman",
-    reviewNum: '(13)'
+    ratings: randomStar(),
+    reviewNum: randomReview()
 },
 {
     id: 8,
@@ -63,7 +79,8 @@ const Bestsellerdata = [
     price: "₱9,495.00",
     imageName: "/img/collectibles/collectible4.jpg",
     description: "to follow na lang since single page pa lang naman",
-    reviewNum: '(13)'
+    ratings: randomStar(),
+    reviewNum: randomReview()
 }
 ]
 

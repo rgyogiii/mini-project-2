@@ -1,6 +1,7 @@
 import React from 'react'
 import './Bestseller.css'
 import Bestsellerdata from './Bestsellerdata'
+import Rating from "@mui/material/Rating";
 
 
 const Bestseller = () => {
@@ -12,12 +13,30 @@ const Bestseller = () => {
         <div className='row justify-content-between'>
           { Bestsellerdata.map((item) =>
     
-          <div key={item.id} className='card m-2' style={{width: "10rem"}}>
+          <div key={item.id} className='card m-2' style={{width: "18rem"}}>
               <img src={item.imageName} class="card-img-top" alt="..." />
               <div class="card-body">
+                  <div className='d-flex justify-content-end'>
+                    <i className="bi bi-heart fav-icon"></i>
+                  </div>
                   <h5 class="card-title">{item.title}</h5>
                   <p class="card-text">{item.description}</p>
-                  <strong>{item.price}</strong>
+                  <div className='d-flex justify-content-between'>
+                    <strong>{item.price}</strong>
+                    <div>
+                      <Rating
+                        name="half-rating-read"
+                        defaultValue={item.ratings}
+                        precision={0.5}
+                        readOnly 
+                        sx={{
+                          fontSize: 18,
+                          color: "#121111",
+                        }}  
+                      />
+                      <span className='fs-6 text-muted revNum'>({item.reviewNum})</span>
+                    </div>
+                  </div>
               </div>
           </div>
 
