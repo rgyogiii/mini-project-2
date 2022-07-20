@@ -1,0 +1,72 @@
+.navbar{
+  font-family: 'Barlow', sans-serif;
+}
+
+.navbar-brand{
+  font-family: 'Tungsten Bold', sans-serif;
+}
+
+/* icons */
+.bi{
+  color: #000000;
+  font-size: 18px;
+}
+
+.bi.bi-suit-heart{
+  font-size: 17px;
+}
+
+.bi.bi-caret-down-fill{
+  color: #000000;
+  font-size: 12px;
+}
+
+.bi.bi-search{
+  font-size: 14px;
+  font-weight: 1400;
+  color: #000000;
+}
+
+
+/* searchbox */
+form.searchContainer{
+  background-color: transparent !important;
+  border-bottom: 1px solid #dcdbdb;
+}
+
+
+form.searchContainer:focus-within{
+  border-bottom: 1px solid #000000;
+}
+
+.searchbox{
+  font-size: 16px;
+  color: #000000 !important;
+  background-color: transparent !important;
+}
+
+.searchbox:focus{
+  outline: none !important;
+  box-shadow: none;
+}
+
+.searchbox::-webkit-search-cancel-button{
+  display: flex !important;
+  align-items: center !important;
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  background: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-x-lg' viewBox='0 0 16 16'%3e%3cpath d='M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z'/%3e%3c/svg%3e") no-repeat 50% 50%;
+}
+
+.search-btn:focus{
+  font-size: 14px;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.search-btn{
+  background-color: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+}

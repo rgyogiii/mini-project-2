@@ -1,13 +1,10 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
-import 'bootstrap-icons/font/bootstrap-icons.css';
 
-import Homepage from './homepage/homepage'
-const App = () => {
+
+function App() {
   return (
     <div>
-    <Homepage/>
+    <img src={process.env.PUBLIC_URL+"/img/creatives/bg-podium.svg"} alt="header img"/>
     </div>
   )
 }

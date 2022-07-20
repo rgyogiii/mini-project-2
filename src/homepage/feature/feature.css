@@ -9,7 +9,8 @@
 .rating h6 {
     font-size: 13px !important;
 }
-.rating{
+
+.rating {
     margin-left: 137px !important;
 }
 
@@ -19,19 +20,27 @@
     font-size: 10px;
     position: absolute !important;
 }
-.fav-icon{
+
+.fav-icon {
     margin-left: 220px;
     cursor: pointer;
 }
-.fav-icon:hover{
+
+.fav-icon:hover {
     color: black !important;
 }
-.list{
+
+.list {
     box-shadow: 0 0 5px #ccc;
 }
-.final{
+
+.final {
     max-width: 1300px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
 }
+
 
 /* Slider CSS */
 .slick-slide>div {
@@ -40,11 +49,6 @@
 
 .slick-list {
     margin: 0 -10px;
-}
-.final {
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 50px;
 }
 
 .slick-prev {
@@ -58,4 +62,3 @@
     border-radius: 50px;
     z-index: 1;
 }
-
