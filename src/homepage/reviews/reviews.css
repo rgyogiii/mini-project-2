@@ -1,0 +1,63 @@
+.review-data{
+    background-color: rgb(248,252,255);
+}
+.bg-color{
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;  
+}
+.container{
+     
+}
+.card img{
+    cursor: pointer;
+}
+
+.card{
+    max-width: 400px;
+    min-width: 300px;
+    max-height: 434px;
+    min-height: 500px;
+    background-color: rgb(248,252,255);
+    border: none;
+    
+}
+
+.card h5{
+    color: rgb(150, 142, 142);
+    cursor: pointer;
+}
+.card h5:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    
+}
+.rating{
+    font-size: 1000px;
+}
+
+.reviewed .comment{
+    max-width: 290px;
+    font-size: 13px;
+}
+/* Slider CSS */
+.slick-slide>div {
+    margin: 0 10px;
+}
+
+.slick-list {
+    margin: 0 -10px;
+}
+
+.slick-prev {
+    background-color: #ccc !important;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+.slick-next {
+    background-color: #ccc !important;
+    border-radius: 50px;
+    z-index: 1;
+}

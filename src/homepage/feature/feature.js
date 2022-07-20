@@ -5,10 +5,9 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import featuredata from './featuredata'
 import Rating from "@mui/material/Rating";
-import Stack from "@mui/material/Stack";
+
 const Final = () => {
     const [isHovered, setHover] = useState(-1);
-    // const [value, setValue] = React.useState<number | null>(2);
     const showButton = (i)=>{
         setHover(i)
     }
@@ -65,7 +64,7 @@ const Final = () => {
     <h2>Featured Products</h2>
         <Slider {...settings}>
             {featuredata && featuredata.map((item, i) =>(
-              <div className='list'>
+              <div className=''>
               <div className="image-hover">
         <div onMouseEnter={()=> showButton(i)} onMouseLeave={hideButton}>
         <img src={item.imageName} width='230px' height='240px'/> <br/>
@@ -74,30 +73,32 @@ const Final = () => {
               )}<br />
         </div> 
         </div>
-        <i className="bi bi-heart fav-icon"></i>
+        <div className='d-flex align-items-end'>
+          <i className="bi bi-heart fav-icon"></i>
+        </div>
+        
         <div className="title">
           <span className='title fs-6 text-muted position-static px-1'>{item.title} </span>
         </div>
-        <div className="d-flex flex-row text-details">
-        <div className="price d-inline">
-        <span className='fs-6 text-muted px-1'>{item.price}</span>
-        </div>
-        <div className="rating fs-1 position-absolute">
-          <h6 className='d-flex'>  
-          <Rating
+        <div className="price">
+          <div className='d-flex justify-content-between'>
+          <span className='fs-6 text-muted px-1'>{item.price}</span>
+          <div className='d-flex px-2'>
+            <Rating
             name="half-rating-read"
             defaultValue={item.ratings}
             precision={0.5}
             readOnly 
             sx={{
-            fontSize: 15,
+            fontSize: 18,
             color: "#121111",
           }}  
             />
-            <span>{item.reviewNum}</span>
-          </h6>
+          <span className='fs-6 text-muted pb-1'>{item.reviewNum}</span>
+          </div>
+            
         </div>
-        </div>
+        </div>          
         </div>
         ))}
         </Slider> 

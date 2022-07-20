@@ -21,9 +21,9 @@ const featuredata = [{
         title: 'Lenovo Legion T5 ...',
         price: "₱109,995.00",
         imageName: "/img/prebuilt/prebuilt1.jpg",
-        ratings: 2.5,
+        ratings: 0,
         description: "to follow na lang since single page pa lang naman",
-        reviewNum: '(64)'
+        reviewNum: '(0)'
     },
     {
         id: 4,
@@ -57,9 +57,9 @@ const featuredata = [{
         title: 'Capcom Figure Builder...',
         price: "₱2,950.00",
         imageName: "/img/collectibles/collectible2.jpg",
-        ratings: 3.5,
+        ratings: 0,
         description: "to follow na lang since single page pa lang naman",
-        reviewNum: '(96)'
+        reviewNum: '(0)'
     },
     {
         id: 8,
@@ -77,7 +77,7 @@ const featuredata = [{
         imageName: "/img/consoles/console9.jpg",
         ratings: 4,
         description: "to follow na lang since single page pa lang naman",
-        reviewNum: '(62)'
+        reviewNum: '(2)'
     },
     {
         id: 10,
@@ -93,9 +93,9 @@ const featuredata = [{
         title: 'Lenovo Legion 5 ...',
         price: "₱104,995.00",
         imageName: "/img/laptop/laptop1.jpg",
-        ratings: 3.5,
+        ratings: 0,
         description: "to follow na lang since single page pa lang naman",
-        reviewNum: '(21)'
+        reviewNum: '(0)'
     },
     {
         id: 12,
@@ -122,7 +122,7 @@ const featuredata = [{
         imageName: "/img/collectibles/collectible6.jpg",
         ratings: 5,
         description: "to follow na lang since single page pa lang naman",
-        reviewNum: '(62)'
+        reviewNum: '(8)'
     },
     {
         id: 15,
@@ -174,9 +174,9 @@ const featuredata = [{
         title: 'Trials of Mana...',
         price: "₱9,495.00",
         imageName: "/img/collectibles/collectible4.jpg",
-        ratings: 4.5,
+        ratings: 0,
         description: "to follow na lang since single page pa lang naman",
-        reviewNum: '(13)'
+        reviewNum: '(0)'
     },
 ]
 
