@@ -19,7 +19,7 @@ const Final = () => {
       infinite: true,
       speed: 500,
       slidesToShow: 5,
-      slidesToScroll: 5,
+      slidesToScroll: 1,
       initialSlide: 0,
       responsive: [
         {
@@ -69,7 +69,7 @@ const Final = () => {
         <div onMouseEnter={()=> showButton(i)} onMouseLeave={hideButton}>
         <img src={item.imageName} width='230px' height='240px'/> <br/>
           {isHovered === i && (
-            <button className="mb-5 mx-2 btn btn-secondary btn-xs" type="button" >Add to cart</button>
+            <div className='d-flex justify-content-end'><button className="mb-5 mx-2 btn btn-secondary btn-xs" type="button" >Add to cart</button></div>
               )}<br />
         </div> 
         </div>
@@ -94,7 +94,7 @@ const Final = () => {
             color: "#121111",
           }}  
             />
-          <span className='fs-6 text-muted pb-1'>{item.reviewNum}</span>
+          <span className='fs-6 text-muted pb-1'>({item.reviewNum})</span>
           </div>
             
         </div>
