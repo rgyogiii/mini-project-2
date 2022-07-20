@@ -18,15 +18,15 @@ const Final = () => {
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 5,
-      slidesToScroll: 1,
+      slidesToShow: 4,
+      slidesToScroll: 4,
       initialSlide: 0,
       responsive: [
         {
           breakpoint: 1100,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
+            slidesToShow: 1,
+            slidesToScroll: 1,
             infinite: true,
             dots: 5
           }
@@ -43,10 +43,11 @@ const Final = () => {
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2,
-            dots: 3
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 1,
+            dots: 3,
+            arrows: false
           }
         },
         {
@@ -54,35 +55,33 @@ const Final = () => {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            dots: 3
+            dots: 3,
+            arrows: false,
           }
         },
       ]
     }
   return (
-    <div className="final">
+    <div className="final container">
     <h2>Featured Products</h2>
         <Slider {...settings}>
             {featuredata && featuredata.map((item, i) =>(
-              <div className=''>
+              <div className='card-list mb-5 pb-3 '>
               <div className="image-hover">
         <div onMouseEnter={()=> showButton(i)} onMouseLeave={hideButton}>
-        <img src={item.imageName} width='230px' height='240px'/> <br/>
+        <div className='d-flex justify-content-center'><img src={item.imageName} width='250px' height='240px'/></div> <br/>
           {isHovered === i && (
-            <div className='d-flex justify-content-end'><button className="mb-5 mx-2 btn btn-secondary btn-xs" type="button" >Add to cart</button></div>
+            <div className='d-flex justify-content-start'><button className="mb-5 mx-2 btn btn-secondary btn-xs fw-bold" type="button" >Add to cart</button></div>
               )}<br />
         </div> 
         </div>
-        <div className='d-flex align-items-end'>
+        <div className='d-flex justify-content-end mx-3'>
           <i className="bi bi-heart fav-icon"></i>
         </div>
-        
-        <div className="title">
-          <span className='title fs-6 text-muted position-static px-1'>{item.title} </span>
-        </div>
+        <span className='title fw-bold px-1'>{item.title} </span>
         <div className="price">
           <div className='d-flex justify-content-between'>
-          <span className='fs-6 text-muted px-1'>{item.price}</span>
+          <span className='fs-6 px-1 fw-bold'>{item.price}</span>
           <div className='d-flex px-2'>
             <Rating
             name="half-rating-read"
@@ -94,7 +93,7 @@ const Final = () => {
             color: "#121111",
           }}  
             />
-          <span className='fs-6 text-muted pb-1'>({item.reviewNum})</span>
+          <span className='fs-6 text-muted revNum'>({item.reviewNum})</span>
           </div>
             
         </div>

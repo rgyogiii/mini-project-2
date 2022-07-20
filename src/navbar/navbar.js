@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import './navbar.css';
+import './Navbar.css';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -39,7 +39,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="navbar navbar-light d-flex fixed-top bg-light">
+    <div className="navbar navbar-light d-flex bg-light">
       <div className="container p-0">
           {/* logo */}
           <a className="navbar-brand order-2 me-5 pe-5 d-flex align-items-center" href="###">
