@@ -7,7 +7,6 @@ import Topbrands from './topbrands/topbrands'
 const homepage = () => {
   return (
     <div>
-        
         <Feature/>
         <Bestseller />
         <Reviews />
