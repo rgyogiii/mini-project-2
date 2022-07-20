@@ -17,13 +17,13 @@ const topbrands = () => {
       };
 
   return (
-    <div className='container py-5'>
+    <div className='container my-5'>
         <h2>Top Brands</h2>
         <Slider {...settings}>
 
         { Topbrandsdata.map((brand) =>
         
-          <div className='justify-content-center'>
+          <div className='justify-content-center mt-3'>
             <img src={brand.imageName} class="card-img-top" alt="..." style={{width: "100px", height: "40px"}}/>
           </div>
         )}
