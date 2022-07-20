@@ -104,6 +104,10 @@ var settings = {
                 <span className='fs-6'>Review by <span className='fw-bold fs-6'>{item.name}</span></span>
                 <span className='comment mb-5'>{item.comment}</span>
             </div>
+            <div className="footer d-flex justify-content-between">
+              <span className='text-muted'>See all reviews</span>
+              <span className='text-muted'>{item.date}</span>
+            </div>
 
             </div>        
         </div>
