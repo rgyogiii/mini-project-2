@@ -82,19 +82,12 @@ form.searchContainer:focus-within{
 
 /* badge */
 .badge{
-  padding: 0.4em 0.6em !important;
-  font-size: .75em !important;
-  background-color: #ffffff !important;
+  font-size: 1em !important;
   color: #000000 !important;
-  border: 1px solid #000000 ;
-}
-
-.rounded-circle{
-  border-radius: 100% !important;
 }
 
 .translate-middle{
-  transform: translate(-30%,-30%)!important;
+  transform: translate(-30%,-40%)!important;
 }
 
 /* mobile */
