@@ -7,11 +7,12 @@ import  { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
-    // <div>
-    // <img src={process.env.PUBLIC_URL+"/img/creatives/bg-podium.svg"} alt="header img"/>
-    // </div>
+    
     <Router>
       <Navbar />
+      <div>
+        <img src={process.env.PUBLIC_URL+"/img/creatives/bg-podium.svg"} alt="header img"/>
+      </div>
         <Routes>
           <Route path='/' element={<Homepage />} />
           <Route path='/product-list' element={<Productlist />} />

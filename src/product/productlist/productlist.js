@@ -2,8 +2,14 @@ import React from 'react'
 
 const Productlist = () => {
   return (
-    <div className='container' style={{height: "100vh"}}>
-        <h1>productlist</h1>
+    <div className='container'>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
     </div>
   )
 }
