@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import './Navbar.css';
+import './navbar.css';
 
 const Navbar = ({ setShow, size }) => {
   const [showMenu, setShowMenu] = useState(false);
