@@ -4,7 +4,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ setShow, size }) => {
   const [showMenu, setShowMenu] = useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -90,10 +90,10 @@ const Navbar = () => {
             </li>
             <li className="nav-item mx-3 cart-icon">
               <a className="nav-link" href="###">
-                <i className="bi bi-cart3"></i>
+                <i className="bi bi-cart3" onClick={() => setShow(false)}></i>
 
                 {/* badge */}
-                <span className="position-absolute translate-middle badge rounded-circle badge-notif">2</span>
+                <span className="position-absolute translate-middle badge rounded-circle badge-notif">{size}</span>
               </a>
             </li>
 
