@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Filter = () => {
+const Productlistfilter = () => {
   return (
     <div className='row mb-5'>
         <div className='col-3 d-flex flex-column'>
@@ -45,4 +45,4 @@ const Filter = () => {
   )
 }
 
-export default Filter
+export default Productlistfilter
