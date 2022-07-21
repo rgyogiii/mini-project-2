@@ -12,8 +12,7 @@ const Bestsellercard = (item, i, handleClick) => {
   return (
     <div key={item.id} className='card m-2' style={{width: "18rem"}}>
       <div onMouseEnter={()=> showButton(i)} onMouseLeave={hideButton}>
-      <img src={item.imageName} class="card-img-top" alt="..." />
-      <div class="card-body">
+        <img src={item.imageName} class="card-img-top mb-3" alt="..." />
         <div className="image-hover">
             { isHovered === i && (
               <div className='d-flex justify-content-start'>
@@ -23,6 +22,7 @@ const Bestsellercard = (item, i, handleClick) => {
             <br />
           </div> 
         </div>
+        <div class="card-body">
         <div className='d-flex justify-content-end'>
           <i className="bi bi-heart fav-icon"></i>
         </div>
