@@ -1,0 +1,102 @@
+.footer{
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover, .footer-sign a:hover{
+  color: #9b9999;
+}
+
+.logo-text{
+  font-family: 'Tungsten Bold', sans-serif;
+  letter-spacing: 8px;
+  font-size: 38px;
+}
+
+.footer-title{
+  font-family: 'Tungsten Bold', sans-serif;
+  letter-spacing: 4px;
+  font-size: 36px;
+}
+
+.team_icon {
+  border-radius: 50%;
+  height: 80px;
+}
+
+.team{
+  font-family: 'Tungsten Bold', sans-serif;
+  letter-spacing: 2px;
+}
+
+.footer-sign{
+  color: #000000;
+}
+
+.footer-sign a {
+  color: #000000;
+}
+
+.fw-bold{
+  font-weight: 500 !important;
+}
+
+/* mobile */
+@media (max-width: 576px){
+  .footer-contianer{
+    background-color: #000000 !important;
+  }
+
+  .footer-sign{
+    display: none !important;
+  }
+
+}
+
+/* tablet */
+@media (max-width: 768px){
+  .footer-sign{
+    display: none !important;
+  }
+
+  .footer-sign-mobile{
+    display: block !important;
+  }
+}
+
+/* small laptops */
+@media (max-width: 992px){
+  .footer-contianer{
+    background-color: #000000 !important;
+  }
+
+  .footer-sign,
+  .footer-sign a{
+    color: #ffffff;
+  }
+
+  .footer-nav{
+    display: none !important;
+  }
+
+  .footer-sign-mobile{
+    display: none;
+  }
+
+}
+
+
+/* laptops and desktops */
+@media (min-width: 992px){
+  .footer-sign-mobile{
+    display: none !important;
+  }
+}
+
+p {
+  margin-bottom: 0px !important;
+}
