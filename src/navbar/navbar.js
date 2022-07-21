@@ -1,8 +1,19 @@
 import React, {useState} from 'react';
+import IconButton from '@mui/material/IconButton';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 import './Navbar.css';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   let menuContainer;
 
@@ -85,12 +96,51 @@ const Navbar = () => {
                 <span className="position-absolute translate-middle badge rounded-circle badge-notif">2</span>
               </a>
             </li>
-            <li className="nav-item ms-3 user-icon dropdown">
-              <a className="nav-link d-flex align-items-center" href="###">
-                <i className="bi bi-person-circle me-0"></i>
-                <i className="bi bi-caret-down-fill ms-1"></i>
-              </a>
+
+            <li className="nav-item ms-2 user-icon">
+            <IconButton 
+              id="basic-button"
+              aria-controls={open ? 'basic-menu' : undefined}
+              aria-haspopup="true"
+              aria-expanded={open ? 'true' : undefined}
+              onClick={handleClick}
+            >
+              <i className="bi bi-person-circle me-0"></i>
+              <i className="bi bi-caret-down-fill ms-1"></i>
+            </IconButton>
+
+            {/* dropdown menu */}
+            <Menu
+              id="basic-menu"
+              anchorEl={anchorEl}
+              open={open}
+              onClose={handleClose}
+              MenuListProps={{
+                'aria-labelledby': 'basic-button',
+              }}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'right',
+              }}
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'right',
+              }}
+            >
+              {/* dropdown list */}
+              <MenuItem onClick={handleClose}>
+                <i class="bi bi-person fs-5"></i><span className="ms-3">Profile</span>
+              </MenuItem>
+              <MenuItem onClick={handleClose}>
+                <i class="bi bi-gear fs-5"></i><span className="ms-3">Settings</span>
+              </MenuItem>
+              <MenuItem onClick={handleClose}>
+                <i class="bi bi-box-arrow-right fs-5"></i><span className="ms-3">Logout</span>
+              </MenuItem>
+
+            </Menu>
             </li>
+
           </ul>
 
           {/* category */}
