@@ -13,7 +13,12 @@
 
 /* icons */
 .bi{
-  color: #000000;
+  color: #000000 !important;
+  font-size: 22px;
+}
+
+.bi:hover{
+  color: #707071 !important;
   font-size: 22px;
 }
 
@@ -82,8 +87,16 @@ form.searchContainer:focus-within{
 
 /* badge */
 .badge{
-  font-size: 1em !important;
+  padding: 3px;
+  width: 22px;
+  height: 22px;
+  font-size: .8em !important;
   color: #000000 !important;
+  background-color: #ffffff !important;
+  border: 1px solid #000000;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 
 .translate-middle{
@@ -97,14 +110,8 @@ form.searchContainer:focus-within{
   }
 
   /* icons */
-  .bi.bi-cart3{
-    font-size: 18px;
-  }
-
-  .bi.bi-suit-heart{
-    font-size: 18px;
-  }
-
+  .bi.bi-cart3,
+  .bi.bi-suit-heart,
   .bi-person-circle{
     font-size: 18px;
   }
@@ -140,11 +147,6 @@ form.searchContainer:focus-within{
 
   .navbar-brand img{
     height: 50px !important;
-  }
-
-  /* icon badge */
-  .badge{
-    font-size: .55em !important;
   }
 
   /* menu */
@@ -200,6 +202,11 @@ form.searchContainer:focus-within{
   .menu-container{
     display: none !important;
   }
+}
+
+.nav-category{
+  font-weight: 700 !important;
+  font-size: 18px !important;
 }
 
 /* default display */
