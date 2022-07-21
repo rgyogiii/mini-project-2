@@ -1,12 +1,13 @@
+import { Link } from '@mui/material';
 import React from 'react'
 import './Bestseller.css'
 import Bestsellercard from './Bestsellercard';
 import Bestsellerdata from './Bestsellerdata'
-
+import { useNavigate } from 'react-router-dom';
 
 
 const Bestseller = () => {
-
+let navigate = useNavigate();
   return (
     <div className='container my-5'>
       <h2>Bestseller Products</h2>
@@ -26,7 +27,7 @@ const Bestseller = () => {
           )}
         </div>
         <div className='text-center'>
-          <button onClick={{}} className='btn btn-dark mt-3'>See More...</button>
+          <button onClick={() => {navigate("/product-list")}} className='btn btn-dark mt-3'>See More...</button>
         </div>
       
     </div>
