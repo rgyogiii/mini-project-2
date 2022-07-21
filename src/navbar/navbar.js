@@ -1,19 +1,9 @@
 import React, {useState} from 'react';
-import IconButton from '@mui/material/IconButton';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
 import './navbar.css';
+
 
 const Navbar = ({ setShow, size }) => {
   const [showMenu, setShowMenu] = useState(false);
-  const [anchorEl, setAnchorEl] = useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
 
   let menuContainer;
 
@@ -85,7 +75,7 @@ const Navbar = ({ setShow, size }) => {
             <li className="nav-item me-2 heart-icon">
               <a className="nav-link" href="###">
                 <i className="bi bi-suit-heart"></i>
-                <span className="position-absolute translate-middle badge">2</span>
+                <span className="position-absolute translate-middle badge">{2}</span>
               </a>
             </li>
             <li className="nav-item mx-3 cart-icon">
@@ -93,52 +83,14 @@ const Navbar = ({ setShow, size }) => {
                 <i className="bi bi-cart3" onClick={() => setShow(false)}></i>
 
                 {/* badge */}
-                <span className="position-absolute translate-middle badge">{size}</span>
+                <span className="position-absolute translate-middle badge">{1}</span>
               </a>
             </li>
 
-            <li className="nav-item user-icon">
-              <IconButton 
-                id="basic-button"
-                aria-controls={open ? 'basic-menu' : undefined}
-                aria-haspopup="true"
-                aria-expanded={open ? 'true' : undefined}
-                onClick={handleClick}
-              >
+            <li className="nav-item user-icon mx-2">
+              <a className="nav-link d-flex align-items-center" href="###">
                 <i className="bi bi-person-circle me-0"></i>
-                <i className="bi bi-caret-down-fill ms-1"></i>
-              </IconButton>
-
-              {/* dropdown menu */}
-              <Menu
-                id="basic-menu"
-                anchorEl={anchorEl}
-                open={open}
-                onClose={handleClose}
-                MenuListProps={{
-                  'aria-labelledby': 'basic-button',
-                }}
-                anchorOrigin={{
-                  vertical: 'bottom',
-                  horizontal: 'right',
-                }}
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-              >
-                {/* dropdown list */}
-                <MenuItem onClick={handleClose}>
-                  <i class="bi bi-person fs-5"></i><span className="ms-3">Profile</span>
-                </MenuItem>
-                <MenuItem onClick={handleClose}>
-                  <i class="bi bi-gear fs-5"></i><span className="ms-3">Settings</span>
-                </MenuItem>
-                <MenuItem onClick={handleClose}>
-                  <i class="bi bi-box-arrow-right fs-5"></i><span className="ms-3">Logout</span>
-                </MenuItem>
-
-              </Menu>
+              </a>
             </li>
 
           </ul>

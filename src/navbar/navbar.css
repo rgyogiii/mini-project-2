@@ -82,9 +82,19 @@ form.searchContainer:focus-within{
 
 /* badge */
 .badge{
-  font-size: 1em !important;
+  padding: 3px;
+  width: 22px;
+  height: 22px;
+  font-size: .8em !important;
   color: #000000 !important;
+  background-color: #ffffff !important;
+  border: 1px solid #000000;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
+
+
 
 .translate-middle{
   transform: translate(-30%,-40%)!important;
@@ -140,11 +150,6 @@ form.searchContainer:focus-within{
 
   .navbar-brand img{
     height: 50px !important;
-  }
-
-  /* icon badge */
-  .badge{
-    font-size: .55em !important;
   }
 
   /* menu */
