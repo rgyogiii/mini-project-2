@@ -8,12 +8,12 @@ import './promo1.css'
 const promo1 = () => {
   return (
     <div className='container first-promos mt-5'>
-    <div className='row justify-content-between'>
-      <div className='d-flex col-6 first-row pe-1'>
-          <img width='100%' height='188px' src={first}/>
+    <div className='row justify-content-between container first-promos mt-5'>
+      <div className='d-flex col-lg-6 col-md-3 first-row pe-lg-1 pe-md-0 py-1'>
+          <img width='100%' src={first}/>
       </div>
-      <div className='d-flex col-6 first-row ps-1'>
-          <img width='100%' height='188px' src={second}/>
+      <div className='d-flex col-lg-6 col-md-3 first-row ps-lg-1 pe-md-0 py-1'>
+          <img width='100%' src={second}/>
       </div>
     </div>
 
