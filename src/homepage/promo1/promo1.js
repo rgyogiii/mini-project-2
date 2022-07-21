@@ -7,7 +7,7 @@ import fifth from './promo1/promo1.5.jpg'
 import './promo1.css'
 const promo1 = () => {
   return (
-    <div className='container first-promos'>
+    <div className='container first-promos mt-5'>
     <div className='d-flex container first-row justify-content-center'>
         <img className='p-1' width='580px' height='188px' src={first}/>
         <img className='p-1' width='580px' height='188px' src={second}/>
