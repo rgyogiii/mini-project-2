@@ -1,14 +1,15 @@
 .footer{
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 a {
-  color: #ffffff;
-  text-decoration: none;
+  color: #ffffff !important;
+  text-decoration: none !important;
 }
 
 a:hover, .footer-sign a:hover{
-  color: #9b9999;
+  color: #9b9999 !important;
+  
 }
 
 .logo-text{
@@ -41,8 +42,9 @@ a:hover, .footer-sign a:hover{
   color: #000000;
 }
 
-.fw-bold{
+.footer-link{
   font-weight: 500 !important;
+  color: #ffffff !important;
 }
 
 /* mobile */

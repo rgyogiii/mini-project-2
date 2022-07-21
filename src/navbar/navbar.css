@@ -7,6 +7,10 @@
   letter-spacing: 10px;
 }
 
+.navbar-brand:hover{
+  color: #000000 !important;
+}
+
 .navbar-brand img{
   height: 80px;
 }
