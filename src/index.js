@@ -7,7 +7,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import Navbar from './navbar/navbar';
 import App from './App';
 import Homepage from './homepage/homepage';
-import Footer from './footer/Footer';
+import Footer from './footer/footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -99,28 +99,28 @@ const Navbar = ({ setShow, size }) => {
           <div className="container pt-2 d-flex justify-content-center order-4 nav-category" id="burgerMenu">
             <ul className="navbar-nav d-flex flex-row">
               <li className="nav-item mx-2">
-                <a className="nav-link fw-bold" href="###">Sale</a>
+                <a className="nav-link nav-category" href="###">Sale</a>
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link fw-bold" href="###">Pre-Built PC</a> 
+                <a className="nav-link nav-category" href="###">Pre-Built PC</a> 
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link fw-bold" href="###">Laptops</a>
+                <a className="nav-link nav-category" href="###">Laptops</a>
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link fw-bold" href="###">Consoles</a>
+                <a className="nav-link nav-category" href="###">Consoles</a>
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link fw-bold" href="###">Peripherals</a>
+                <a className="nav-link nav-category" href="###">Peripherals</a>
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link fw-bold" href="###">Collectibles</a>
+                <a className="nav-link nav-category" href="###">Collectibles</a>
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link fw-bold" href="###">Brands</a>
+                <a className="nav-link nav-category" href="###">Brands</a>
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link fw-bold" href="###">Promos</a>
+                <a className="nav-link nav-category" href="###">Promos</a>
               </li>
             </ul>
           </div>
