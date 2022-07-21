@@ -46,7 +46,7 @@ var settings = {
         <div className="container mb-5">     
             <br />
             <div className="card px-4">
-                <h5>{item.title}</h5>
+                <h5 className='item-title'>{item.title}</h5>
                 <img height='75px' width='75px' src={item.image}/>
             <div className="value mt-5">
               <div className='d-flex justify-content-between'>

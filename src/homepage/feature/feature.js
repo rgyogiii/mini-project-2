@@ -81,7 +81,7 @@ const Final = () => {
         <span className='title fw-bold px-1'>{item.title} </span>
         <div className="price">
           <div className='d-flex justify-content-between'>
-          <span className='fs-6 px-1 fw-bold'>{item.price}</span>
+          <span className='fs-6 px-1 fw-bold'>₱{item.price.toLocaleString()}</span>
           <div className='d-flex px-2'>
             <Rating
             name="half-rating-read"

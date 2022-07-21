@@ -22,7 +22,7 @@ const Bestseller = () => {
                   <h5 class="card-title">{item.title}</h5>
                   <p class="card-text">{item.description}</p>
                   <div className='d-flex justify-content-between'>
-                    <strong>{item.price}</strong>
+                    <strong>₱{item.price.toLocaleString()}</strong>
                     <div>
                       <Rating
                         name="half-rating-read"
