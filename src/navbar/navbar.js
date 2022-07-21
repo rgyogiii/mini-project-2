@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import './navbar.css';
+import React, {useState} from 'react';
+import './Navbar.css';
 
 const Navbar = ({ setShow, size }) => {
   const [showMenu, setShowMenu] = useState(false);
@@ -43,7 +43,7 @@ const Navbar = ({ setShow, size }) => {
       <div className="container p-0">
           {/* logo */}
           <a className="navbar-brand order-2 me-5 pe-5 d-flex align-items-center" href="###">
-            <span className="fs-1">AR</span> 
+            <span className="fs-1 ms-2">AR</span> 
               <img src={process.env.PUBLIC_URL+"logo.svg"} alt="Araktek Logo"/>
             <span className="fs-1 px-2">KTEK</span> 
           </a>
@@ -85,7 +85,7 @@ const Navbar = ({ setShow, size }) => {
                 <span className="position-absolute translate-middle badge rounded-circle badge-notif">{size}</span>
               </a>
             </li>
-            <li className="nav-item ms-3 user-icon">
+            <li className="nav-item ms-3 user-icon dropdown">
               <a className="nav-link d-flex align-items-center" href="###">
                 <i className="bi bi-person-circle me-0"></i>
                 <i className="bi bi-caret-down-fill ms-1"></i>

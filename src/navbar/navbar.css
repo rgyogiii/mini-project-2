@@ -172,12 +172,6 @@ form.searchContainer:focus-within{
   }
 }
 
-/* tablet */
-@media (max-width: 768px){
-  .temp{
-    display: none !important;
-  }
-}
 
 /* small laptops */
 @media (max-width: 992px){
@@ -209,12 +203,6 @@ form.searchContainer:focus-within{
 }
 
 /* laptops and desktops */
-@media (max-width: 1200px){
-  .temp{
-    display: none !important;
-  }
-}
-
 @media (min-width: 992px){
   .menu-container{
     display: none !important;
