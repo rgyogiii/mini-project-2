@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './navbar/navbar';
 import Homepage from './homepage/homepage';
-import Footer from './footer/footer';
+import Footer from './footer/Footer';
 import Productlist from './product/productlist/productlist';
 import  { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 

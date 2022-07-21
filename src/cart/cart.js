@@ -1,53 +1,64 @@
-import React, { useState, useEffect } from "react";
+import React from 'react'
+import { useCart } from 'react-use-cart'
 import './cart.css'
 
-
-
-
-const Cart = ({cart, setCart, handleChange}) => {
-
-const [price, setPrice] = useState(0);
-
-  const handleRemove = (id) => {
-    const arr = cart.filter((item) => item.id !== id);
-    setCart(arr);
-    handlePrice();
-  };
-
-  const handlePrice = () => {
-    let ans = 0;
-    cart.map((item) => (ans += item.amount * item.price));
-    setPrice(ans);
-  };
-
-  useEffect(() => {
-    handlePrice();
-  });
+const Cart = () => {
+  const { 
+    isEmpty,
+    totalUniqueItems,
+    items,
+    totalItems,
+    cartTotal,
+    updateItemQuantity,
+    removeItem,
+    emptyCart,
+  } = useCart();
 
   return (
-    <article>
-      {cart.map((item) => (
-        <div className="cart_box" key={item.id}>
-          <div className="cart_img">
-            <img src={item.img} alt="" />
-            <p>{item.title}</p>
-          </div>
-          <div>
-            <button onClick={() => handleChange(item, 1)}>+</button>
-            <button>{item.amount}</button>
-            <button onClick={() => handleChange(item, -1)}>-</button>
-          </div>
-          <div>
-            <span>{item.price}</span>
-            <button onClick={() => handleRemove(item.id)}>Remove</button>
-          </div>
+    <div>
+
+        <div className='py-4 container cart' style={{marginTop:200}}>
+      <div className="row justify-content-center">
+        <div className="col-12">
+          <h4>Cart ({totalUniqueItems}) total Items: ({totalItems})</h4>
+          <table className='table table-light table-hover m-0'>
+          <tbody>
+            {items.map((item, index)=>{
+              return(
+              <tr key={index}>
+                <td>
+                <img src={item.imageName} style={{height: '6rem'}}/>
+                </td>
+                <td>{item.title}</td>
+                <td>₱{item.price.toLocaleString()}</td>
+                <td>QTY:{item.quantity}</td>
+
+                <button className='btn btn-info ms-2' onClick={()=> updateItemQuantity(item.id, item.quantity -1)}>
+                -
+                </button>
+                <button className='btn btn-info ms-2' onClick={()=> updateItemQuantity(item.id, item.quantity +1)}>
+                +
+                </button>
+                <button className='btn btn-info  ms-2' onClick={()=> removeItem(item.id)}>
+                Remove Item
+                </button>
+              </tr>)
+
+            })}
+          </tbody>
+            
+          </table>
+
         </div>
-      ))}
-      <div className="total">
-        <span>Total Price of your Cart</span>
-        <span>Rs - {price}</span>
+        <div className="col-auto ms-auto">
+          <h2>Total Price: ₱{cartTotal.toLocaleString()}</h2>
+        </div>
+        <div onClick={()=> emptyCart()} className='btn btn-danger m-2'>Clear Cart</div>
       </div>
-    </article>
+    </div>
+    
+    </div>
+
   )
 }
 
