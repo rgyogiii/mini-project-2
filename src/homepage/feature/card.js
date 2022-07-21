@@ -12,14 +12,20 @@ const Card = (item, i, handleClick) => {
         setHover(-1)
     }
   return (  
-       <div className='card-list mb-5 pb-3'>
-              <div className="image-hover">
-        <div onMouseEnter={()=> showButton(i)} onMouseLeave={hideButton}>
-        <div className='d-flex justify-content-center'><img src={item.imageName} width='250px' height='240px'/></div> <br/>
-          {isHovered === i && (
-            <div className='d-flex justify-content-start'><button onClick={() => handleClick(item)}className="mb-5 mx-2 btn btn-secondary btn-xs fw-bold" type="button" >Add to cart</button></div>
-              )}<br />
-        </div> 
+      <div className='card-list mb-5 pb-3'>
+        <div className="image-hover">
+          <div onMouseEnter={()=> showButton(i)} onMouseLeave={hideButton}>
+            <div className='d-flex justify-content-center'>
+              <img src={item.imageName} width='250px' height='240px'/>
+            </div> 
+            <br/>
+            { isHovered === i && (
+              <div className='d-flex justify-content-start'>
+                <button onClick={() => handleClick(item)}className="mb-5 mx-2 btn btn-secondary btn-xs fw-bold" type="button" >Add to cart</button>
+              </div>
+            )}
+            <br />
+          </div> 
         </div>
         <div className='d-flex justify-content-end mx-3'>
           <i className="bi bi-heart fav-icon"></i>
