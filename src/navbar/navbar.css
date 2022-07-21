@@ -147,10 +147,6 @@ form.searchContainer:focus-within{
     font-size: .55em !important;
   }
 
-  /* .badge-notif{
-    display: none;
-  } */
-
   /* menu */
   .vegMenu{
     background-color: transparent !important;
@@ -222,8 +218,8 @@ form.searchContainer:focus-within{
 
 .bi.bi-x-lg{
   font-size: 30px;
-  padding-right: 5px !important;
-  padding-top: 15px !important;
+  padding-right: 2px !important;
+  padding-top: 22px !important;
 }
 
 .menu-list{

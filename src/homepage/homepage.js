@@ -7,8 +7,8 @@ import Firstpromo from './promo1/promo1'
 import Secondpromo from './promo2/promo2'
 const homepage = () => {
   return (
-    <div>
-        <Feature/>
+    <div className="mx-3">
+        <Feature />
         <Firstpromo/>
         <Bestseller />
         <Secondpromo/>

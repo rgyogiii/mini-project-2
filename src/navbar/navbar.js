@@ -50,7 +50,7 @@ const Navbar = ({ setShow, size }) => {
   }
 
   return (
-    <div className="navbar navbar-light d-flex bg-light">
+    <div className="navbar fixed-top navbar-light d-flex bg-light ">
       <div className="container p-0">
           {/* logo */}
           <a className="navbar-brand order-2 me-5 pe-5 d-flex align-items-center" href="###">
@@ -61,7 +61,7 @@ const Navbar = ({ setShow, size }) => {
 
           {/* mobile menu */}
           <button 
-          className="btn btn-outline-dark vegMenu order-5 p-1 mx-2"
+          className="btn btn-outline-dark vegMenu order-5 p-1 pe-2"
           onClick={() => setShowMenu(!showMenu)}>
             <i className="bi bi-list"></i>
           </button>
@@ -173,9 +173,9 @@ const Navbar = ({ setShow, size }) => {
             </ul>
           </div>
 
-          
+          {menuContainer}
       </div>
-      {menuContainer}
+      
     </div>
   )
 }

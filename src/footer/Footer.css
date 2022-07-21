@@ -55,6 +55,10 @@ a:hover, .footer-sign a:hover{
     display: none !important;
   }
 
+  .footer-sign-mobile{
+    font-size: 14px;
+  }
+
 }
 
 /* tablet */
