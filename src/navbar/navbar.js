@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ setShow, size }) => {
   const [showMenu, setShowMenu] = useState(false);
 
   let menuContainer;
@@ -79,10 +79,10 @@ const Navbar = () => {
             </li>
             <li className="nav-item mx-3 cart-icon">
               <a className="nav-link" href="###">
-                <i className="bi bi-cart3"></i>
+                <i className="bi bi-cart3" onClick={() => setShow(false)}></i>
 
                 {/* badge */}
-                <span className="position-absolute translate-middle badge rounded-circle badge-notif">2</span>
+                <span className="position-absolute translate-middle badge rounded-circle badge-notif">{size}</span>
               </a>
             </li>
             <li className="nav-item ms-3 user-icon">
