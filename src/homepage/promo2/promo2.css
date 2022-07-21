@@ -1,0 +1,18 @@
+.second-promos img{
+    cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+    .first-ad img{
+        max-width: 100%;
+    }
+    .second-ad{
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+    }
+    .second-ad img{
+         max-width: 100%;  
+    }
+    } 
+    

@@ -1,7 +1,6 @@
 
 .container {
     font-family: 'Barlow', sans-serif;
-
 }
 
 .container h2 {
@@ -24,12 +23,15 @@
 
 }
 
-.card h5 {
+.item-title {
     color: #000000;
     cursor: pointer;
+    font-family: 'Tungsten Bold', sans-serif;
+    letter-spacing: 1px;
+    font-size: 30px !important;
 }
 
-.card h5:hover {
+.item-title:hover {
     text-decoration: underline;
 }
 
