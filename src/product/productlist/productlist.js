@@ -1,9 +1,11 @@
 import React from 'react'
 
-const prd_list = () => {
+const Productlist = () => {
   return (
-    <div>prd_list</div>
+    <div className='container' style={{height: "100vh"}}>
+        <h1>productlist</h1>
+    </div>
   )
 }
 
-export default prd_list
+export default Productlist
