@@ -5,14 +5,19 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import featuredata from './featuredata'
 import Card from './card'
-const Final = ({handleClick}) => {
+
+
+const Final = () => {
     const settings = {
-      dots: true,
+      dots: false,
       infinite: true,
-      speed: 500,
+      speed: 650,
       slidesToShow: 4,
-      slidesToScroll: 4,
+      slidesToScroll: 1,
       initialSlide: 0,
+      autoplay: true,
+      autoplaySpeed: 3500,
+      cssEase: "linear",
       responsive: [
         {
           breakpoint: 1100,
@@ -55,19 +60,21 @@ const Final = ({handleClick}) => {
     }
   return (
     <div className="final container">
-    <h2>Featured Products</h2>
-        <Slider {...settings}>
-            {featuredata.map((item) =>(
-              <Card
-              key={item.id}
-              title={item.title}
-              price={item.price}
-              imageName={item.imageName}
-              ratings={item.ratings}
-              reviewNum={item.reviewNum}
-              />
-        ))}
-        </Slider> 
+    <h1 className="my-4">Featured Products</h1>
+      <div className="mx-2 mt-3">
+          <Slider {...settings}>
+              {featuredata.map((item) =>(
+                <Card
+                key={item.id}
+                title={item.title}
+                price={item.price}
+                imageName={item.imageName}
+                ratings={item.ratings}
+                reviewNum={item.reviewNum}
+                />
+          ))}
+          </Slider> 
+      </div>
     </div>
     
   )
