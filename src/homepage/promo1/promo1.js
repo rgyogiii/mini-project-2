@@ -8,15 +8,21 @@ import './promo1.css'
 const promo1 = () => {
   return (
     <div className='container first-promos mt-5'>
-    <div className='d-flex container first-row justify-content-center'>
-        <img className='p-1' width='580px' height='188px' src={first}/>
-        <img className='p-1' width='580px' height='188px' src={second}/>
+    <div className='row justify-content-between'>
+      <div className='d-flex col-6 first-row pe-1'>
+          <img width='100%' height='188px' src={first}/>
+      </div>
+      <div className='d-flex col-6 first-row ps-1'>
+          <img width='100%' height='188px' src={second}/>
+      </div>
     </div>
-    <div className='d-flex mt-4 second-row justify-content-center'>
+
+    {/* 3 promo cards */}
+    {/* <div className='d-flex mt-4 second-row justify-content-center'>
         <img className='p-1' width='580px' height='188px' src={third}/>
         <img className='p-1' width='580px' height='188px' src={fourth}/>
         <img className='p-1'width='580px' height='188px' src={fifth}/>
-    </div>
+    </div> */}
 
     </div>
   )
