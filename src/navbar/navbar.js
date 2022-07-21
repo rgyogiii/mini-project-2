@@ -40,7 +40,7 @@ const Navbar = ({ setShow, size }) => {
   }
 
   return (
-    <div className="navbar sticky-top navbar-light d-flex bg-light ">
+    <div className="navbar fixed-top navbar-light d-flex bg-light ">
       <div className="container p-0">
           {/* logo */}
           <a className="navbar-brand order-2 me-5 pe-5 d-flex align-items-center" href="###">
