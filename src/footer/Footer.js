@@ -35,18 +35,18 @@ const Footer = () => {
 
           <div className="col-3 ms-auto d-flex mt-2 flex-column">
             <h1 className="footer-title text-uppercase">Customer Support</h1>
-            <a className="ps-4 py-3 fs-5 fw-bold" href="###">Return & Refund</a>
-            <a className="ps-4 pb-3 fs-5 fw-bold" href="###">Order Cancellation</a>
-            <a className="ps-4 pb-3 fs-5 fw-bold" href="###">Warranty</a>
-            <a className="ps-4 pb-3 fs-5 fw-bold" href="###">FAQs</a>
+            <a className="ps-4 py-3 fs-5 footer-link" href="###">Return & Refund</a>
+            <a className="ps-4 pb-3 fs-5 footer-link" href="###">Order Cancellation</a>
+            <a className="ps-4 pb-3 fs-5 footer-link" href="###">Warranty</a>
+            <a className="ps-4 pb-3 fs-5 footer-link" href="###">FAQs</a>
           </div>
           
           <div className="col-3 ps-5 d-flex mt-2 flex-column">
             <h1 className="footer-title text-uppercase">About</h1>
-            <a className="ps-4 py-3 fs-5 fw-bold" href="###">Company</a>
-            <a className="ps-4 pb-3 fs-5 fw-bold" href="###">Promos</a>
-            <a className="ps-4 pb-3 fs-5 fw-bold" href="###">Support</a>
-            <a className="ps-4 pb-3 fs-5 fw-bold" href="###">Terms & Services</a>
+            <a className="ps-4 py-3 fs-5 footer-link" href="###">Company</a>
+            <a className="ps-4 pb-3 fs-5 footer-link" href="###">Promos</a>
+            <a className="ps-4 pb-3 fs-5 footer-link" href="###">Support</a>
+            <a className="ps-4 pb-3 fs-5 footer-link" href="###">Terms & Services</a>
           </div>
         </div>
       </div>
