@@ -27,10 +27,13 @@ const Card = (item, i, handleClick) => {
             <br />
           </div> 
         </div>
+
         <div className='d-flex justify-content-end mx-3'>
           <i className="bi bi-heart fav-icon"></i>
         </div>
+
         <span className='title fw-bold px-1'>{item.title} </span>
+        
         <div className="price">
           <div className='d-flex justify-content-between'>
           <span className='fs-6 px-1 fw-bold'>₱{item.price.toLocaleString()}</span>
@@ -49,7 +52,7 @@ const Card = (item, i, handleClick) => {
           </div>
         </div>
         </div>          
-        </div>
+      </div>
   )
 }
 
