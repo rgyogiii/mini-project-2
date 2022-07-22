@@ -27,8 +27,8 @@ let navigate = useNavigate();
 
           )}
         </div>
-        <div className='text-center'>
-          <button onClick={() => {navigate("/product-list")}} className='btn btn-dark mt-3'>See More...</button>
+        <div className='text-center pb-5'>
+          <button onClick={() => {navigate("/product-list")}} className='btn btn-outline-dark mt-3 cMore-prd'>See More...</button>
         </div>
       
     </div>

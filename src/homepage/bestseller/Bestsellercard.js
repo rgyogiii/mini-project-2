@@ -42,7 +42,7 @@ const Bestsellercard = (props, i) => {
                 color: "#121111",
               }}  
             />
-            <span className='fs-6 text-muted revNum  pt-1'>({props.reviewNum})</span>
+            <span className='fs-6 text-muted revNum pt-1'>({props.reviewNum})</span>
           </div>
         </div>
       </div>
