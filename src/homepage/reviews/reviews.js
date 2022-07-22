@@ -40,7 +40,7 @@ var settings = {
     };
   return (
     <div className='container review-data mt-5 pb-5'>
-    <h2>See our top-rated products' reviews</h2>
+    <h2 className="my-4 py-2">See our top-rated products' reviews</h2>
         <Slider {...settings}>
         {reviewData.map((item) =>(
         <div className="container mb-5">     
