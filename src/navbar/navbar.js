@@ -7,8 +7,9 @@ import ClickAwayListener from '@mui/material/ClickAwayListener';
 import './navbar.css';
 import { useCart } from 'react-use-cart'
 import { Link } from 'react-router-dom'
+import feature from '../homepage/feature/card'
 
-const Navbar = ({ setShow, size }) => {
+const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const {totalItems} = useCart();
   const [open, setOpen] = React.useState(false);
@@ -99,7 +100,7 @@ const Navbar = ({ setShow, size }) => {
             <li className="nav-item me-2 heart-icon">
               <a className="nav-link" href="###">
                 <i className="bi bi-suit-heart"></i>
-                <span className="position-absolute translate-middle badge">{2}</span>
+                <span className="position-absolute translate-middle badge">{0}</span>
               </a>
             </li>
             <li className="nav-item mx-3 cart-icon">

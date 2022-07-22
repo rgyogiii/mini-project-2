@@ -14,7 +14,7 @@ const App = () => {
     <Router>
       <CartProvider>
       <Navbar/>
-      
+      <img src={process.env.PUBLIC_URL+"/img/creatives/bg-podium.svg"} width="100%" alt="headerimg"/>
       <Routes>
         <Route path='/' element={<Homepage />} />
           <Route path='/product-list' element={<Productlist />} />
