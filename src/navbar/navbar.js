@@ -1,9 +1,30 @@
 import React, {useState} from 'react';
+import IconButton from '@mui/material/IconButton';
+import Popper from '@mui/material/Popper';
+import MenuItem from '@mui/material/MenuItem';
+import Paper from '@mui/material/Paper';
+import ClickAwayListener from '@mui/material/ClickAwayListener';
+import Box from '@mui/material/Box';
 import './navbar.css';
 
 
 const Navbar = ({ setShow, size }) => {
   const [showMenu, setShowMenu] = useState(false);
+
+  const [open, setOpen] = React.useState(false);
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+    setOpen((previousOpen) => !previousOpen);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+    setOpen(false);
+  };
+
+  const isOpen = open && Boolean(anchorEl);
+  const id = isOpen ? 'openMenu' : undefined;
 
   let menuContainer;
 
@@ -40,7 +61,9 @@ const Navbar = ({ setShow, size }) => {
   }
 
   return (
-    <div className="navbar fixed-top navbar-light d-flex bg-light ">
+    <ClickAwayListener onClickAway={handleClose}>
+      
+    <div className="navbar sticky-top navbar-light d-flex bg-light ">
       <div className="container p-0">
           {/* logo */}
           <a className="navbar-brand order-2 me-5 pe-5 d-flex align-items-center" href="###">
@@ -87,10 +110,35 @@ const Navbar = ({ setShow, size }) => {
               </a>
             </li>
 
-            <li className="nav-item user-icon mx-2">
-              <a className="nav-link d-flex align-items-center" href="###">
+            <li className="nav-item ">
+              <IconButton
+                className="d-flex align-items-center" 
+                aria-describedby={id} 
+                onClick={handleClick}
+              >
                 <i className="bi bi-person-circle me-0"></i>
-              </a>
+              </IconButton>
+              <Popper
+
+                id={id} 
+                open={open} 
+                anchorEl={anchorEl}
+                onClose={handleClose}
+                placement={'bottom-end'}
+                >
+                  <Paper elevation={16}>
+                    {/* dropdown list */}
+                    <MenuItem  onClick={handleClose} className="mx-2">
+                      <i class="bi bi-person fs-5"></i><span className="ms-3">Profile</span>
+                    </MenuItem>
+                    <MenuItem  onClick={handleClose} className="mx-2">
+                      <i class="bi bi-gear fs-5"></i><span className="ms-3">Settings</span>
+                    </MenuItem>
+                    <MenuItem  onClick={handleClose} className="mx-2">
+                      <i class="bi bi-box-arrow-right fs-5"></i><span className="ms-3">Logout</span>
+                    </MenuItem>
+                  </Paper>
+              </Popper>
             </li>
 
           </ul>
@@ -129,6 +177,7 @@ const Navbar = ({ setShow, size }) => {
       </div>
       
     </div>
+    </ClickAwayListener>
   )
 }
 

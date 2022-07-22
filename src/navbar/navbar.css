@@ -30,6 +30,8 @@
   font-size: 22px;
 }
 
+
+
 .bi.bi-caret-down-fill{
   color: #000000;
   font-size: 12px;
@@ -117,7 +119,7 @@ form.searchContainer:focus-within{
   .bi.bi-cart3,
   .bi.bi-suit-heart,
   .bi-person-circle{
-    font-size: 18px;
+    font-size: 18px !important;
   }
 
   .bi.bi-caret-down-fill{
@@ -250,4 +252,13 @@ form.searchContainer:focus-within{
 .searchmenu:focus-within{
   background-color: transparent !important;
   border-bottom: 1px solid #000000;
+}
+
+#openMenu{
+  position: fixed;
+  z-index: 3 !important;
+}
+
+.sticky-top{
+  z-index: 2 !important;
 }
