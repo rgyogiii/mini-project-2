@@ -2,3 +2,9 @@
     max-width: 100%;
 }
 
+@media (max-width: 576px){
+    .ad-image img{
+        max-height: 320px;
+
+    }
+}
