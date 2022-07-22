@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="container row my-5">
           <div className="col-5">
             <p className="me-5 pe-5 d-flex align-items-center logo-text" href="###">
-              <span className="fs-1 pe-2">AR</span> 
+              <span className="fs-1">AR</span> 
                 <img src={process.env.PUBLIC_URL+"logo-white.svg"} height="60" alt="Araktek Logo"/>
               <span className="fs-1 px-2">KTEK</span> 
             </p>

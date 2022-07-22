@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
 import './navbar.css';
-
+import { useCart } from 'react-use-cart'
+import { Link } from 'react-router-dom'
 
 const Navbar = ({ setShow, size }) => {
   const [showMenu, setShowMenu] = useState(false);
-
+  const {totalItems} = useCart();
   let menuContainer;
 
   if(showMenu){
@@ -80,10 +81,10 @@ const Navbar = ({ setShow, size }) => {
             </li>
             <li className="nav-item mx-3 cart-icon">
               <a className="nav-link" href="###">
-                <i className="bi bi-cart3" onClick={() => setShow(false)}></i>
+                <i className="bi bi-cart3"></i>
 
                 {/* badge */}
-                <span className="position-absolute translate-middle badge">{1}</span>
+                <span className="position-absolute translate-middle badge">{totalItems}</span>
               </a>
             </li>
 
