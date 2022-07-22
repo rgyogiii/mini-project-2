@@ -24,7 +24,7 @@ const generateName = () => {
 
 const reviewData = [{
         id: 1,
-        title: 'AYANEO NEXT AMD Ryzen7 5825U...',
+        title: 'AYANEO NEXT AMD Ryzen 7 5825U 16GB RAM 1TB SSD Handheld Gaming Console (Bright White)+Super Power Storage Bag+Tempered Glass Screen Protector',
         image: "/img/consoles/console9.jpg",
         quality: starGen(),
         price: starGen(),
@@ -35,7 +35,7 @@ const reviewData = [{
     },
     {
         id: 2,
-        title: 'TRIALS OF MANA BRING ARTS ...',
+        title: 'TRIALS OF MANA BRING ARTS (KEVIN & CHARLOTTE)',
         image: "/img/collectibles/collectible4.jpg",
         quality: starGen(),
         price: starGen(),
@@ -46,7 +46,7 @@ const reviewData = [{
     },
     {
         id: 3,
-        title: 'Asus ROG Zephyrus G15 15.6" ...',
+        title: 'Asus ROG Zephyrus G15 15.6" AMD Ryzen 7 6800HS | NVIDIA GeForce RTX 3070 Ti | 16GB DDR5 | 1TB SSD [Eclipse Gray]',
         image: "/img/laptop/laptop4.jpg",
         quality: starGen(),
         price: starGen(),
@@ -57,7 +57,7 @@ const reviewData = [{
     },
     {
         id: 4,
-        title: 'NIER REPLICANT VER. 1.2...',
+        title: 'NIER REPLICANT VER. 1.22474487139 BRING ARTS ACTION FIGURE (YOUNG PROTAGONIST)',
         image: "/img/collectibles/collectible6.jpg",
         quality: starGen(),
         price: starGen(),
@@ -68,7 +68,7 @@ const reviewData = [{
     },
     {
         id: 5,
-        title: 'Lenovo IdeaCentre 3 07IAB7 ...',
+        title: 'Lenovo IdeaCentre 3 07IAB7 90SM001BPH Intel Core i5-12400 | Integrated UHD Graphics | 8GB DDR4 |512GB SSD [Mineral Grey]',
         image: "/img/prebuilt/prebuilt6.jpg",
         quality: starGen(),
         price: starGen(),
@@ -79,7 +79,7 @@ const reviewData = [{
     },
     {
         id: 6,
-        title: 'Nintendo Switch V2 ...',
+        title: 'Nintendo Switch V2 Gray Joy-Con [Refresh]',
         image: "/img/consoles/console7.jpg",
         quality: starGen(),
         price: starGen(),
@@ -90,7 +90,7 @@ const reviewData = [{
     },
     {
         id: 7,
-        title: 'GDP Pocket 3 i7 1195G7 16GB ...',
+        title: 'GDP Pocket 3 i7 1195G7 16GB SSD 1TB Handheld Gaming Laptop + Stylus Pen For Pocket 3 Mini Laptop (ME-MPP503) + GPD Protection Case Bag',
         image: "/img/consoles/console10.jpg",
         quality: starGen(),
         price: starGen(),
@@ -101,7 +101,7 @@ const reviewData = [{
     },
     {
         id: 8,
-        title: 'NINTENDO AMIIBO SUPER MARIO  ...',
+        title: 'NINTENDO AMIIBO SUPER MARIO BROS 30TH ANNIVERSARY MARIO CLASSIC COLOR',
         image: "/img/collectibles/collectible9.jpg",
         quality: starGen(),
         price: starGen(),
@@ -112,7 +112,7 @@ const reviewData = [{
     },
     {
         id: 9,
-        title: 'Xbox Series X 1TB SSD ...',
+        title: 'Xbox Series X 1TB SSD Console [Asian]',
         image: "/img/consoles/console3.jpg",
         quality: starGen(),
         price: starGen(),
@@ -123,7 +123,7 @@ const reviewData = [{
     },
     {
         id: 10,
-        title: 'Asus ROG Strix G15DH ...',
+        title: 'Asus ROG Strix G15DH PH005T Desktop AMD Ryzen™ 5-3600X | NVIDIA GeForce GTX 1650 | 8GB RAM | 1TB HDD + 256GB SSD [Star Black]',
         image: "/img/prebuilt/prebuilt5.jpg",
         quality: starGen(),
         price: starGen(),
