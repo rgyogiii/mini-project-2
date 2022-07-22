@@ -10,7 +10,7 @@ const Bestseller = () => {
 let navigate = useNavigate();
   return (
     <div className='container my-5'>
-      <h1 className="my-4">Bestseller Products</h1>
+      <h1 className="my-5 component-title">Bestseller Products</h1>
      
         <div className='row justify-content-between'>
           { Bestsellerdata.map((item) =>

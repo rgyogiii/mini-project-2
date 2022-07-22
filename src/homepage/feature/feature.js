@@ -60,7 +60,7 @@ const Final = () => {
     }
   return (
     <div className="final container">
-    <h1 className="my-4">Featured Products</h1>
+    <h1 className="my-5 component-title">Featured Products</h1>
       <div className="mx-2 mt-3">
           <Slider {...settings}>
               {featuredata.map((item) =>(
