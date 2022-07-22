@@ -4,7 +4,7 @@ import Homepage from './homepage/homepage';
 import Footer from './footer/Footer';
 import Cart from './cart/cart'
 import { CartProvider } from 'react-use-cart'
-import Productlist from './product/productlist/Productlist';
+import Productlist from './product/productlist/productlist';
 import  { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Promos from './promos/promos'
 

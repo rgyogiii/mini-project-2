@@ -7,9 +7,8 @@ a {
   text-decoration: none !important;
 }
 
-a:hover, .footer-sign a:hover{
+.footer-link:hover, .footer-sign a:hover{
   color: #9b9999 !important;
-  
 }
 
 .logo-text{
