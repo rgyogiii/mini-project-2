@@ -39,8 +39,8 @@ const Cart = () => {
                 <button className='btn btn-info ms-2' onClick={()=> updateItemQuantity(item.id, item.quantity +1)}>
                 +
                 </button>
-                <button className='btn btn-info  ms-2' onClick={()=> removeItem(item.id)}>
-                Remove Item
+                <button className='btn btn-info bg-danger  ms-2' onClick={()=> removeItem(item.id)}>
+                <i class="bi bi-trash3-fill fs-6 "></i>
                 </button>
               </tr>)
 
