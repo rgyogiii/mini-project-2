@@ -83,7 +83,7 @@ const promos = () => {
     </div>
     {promoImage.map((props)=>(
         <div className='d-flex flex-direction-column justify-content-center mb-3'>
-            <img style={{cursor:'pointer'}} src={props.image} width='700px' height='300px'/>
+            <img style={{cursor:'pointer', minWidth:'375px'}} src={props.image} width='700px' height='300px'/>
         </div>
     ))}
     </div>

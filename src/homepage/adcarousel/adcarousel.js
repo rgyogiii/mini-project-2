@@ -83,7 +83,7 @@ const adcarousel = () => {
      <Slider {...settings}>
         {ads.map((props)=>(
             <div className='ad-image d-flex justify-content-center'>
-                <img style={{cursor:'pointer'}} src={props.adimage} alt="" srcset="" width='2024px' height='620px' />
+                <img style={{cursor:'pointer', minWidth:'375px'}} src={props.adimage} alt="" srcset="" width='2024px' height='620px' />
             </div>
         ))}
         </Slider>
