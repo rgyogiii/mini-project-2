@@ -16,15 +16,10 @@ const Cart = () => {
 
   if(isEmpty){
     return(
-      <div>
-      <div className='d-flex justify-content-center'>
+      <div className=''>
+      <div className='d-flex justify-content-center empty-cart'>
         <h1>Your Cart is Empty</h1>
       </div>
-        
-         <div  className='m-2 d-flex justify-content-between'>
-          <button className='btn btn-danger' onClick={()=> emptyCart()}>Clear Cart</button>
-          <button className='btn btn-secondary w-25'>CHECKOUT</button>
-        </div>
       </div>
     )
   }
