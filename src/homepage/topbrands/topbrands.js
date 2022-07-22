@@ -10,20 +10,20 @@ const topbrands = () => {
         slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 4000,
+        speed: 1000,
+        autoplaySpeed: 2000,
         cssEase: "linear",
         arrows: false
       };
 
   return (
     <div className='container my-5'>
-        <h2>Top Brands</h2>
+        <h1 className="my-5 component-title">Top Brands</h1>
         <Slider {...settings}>
 
         { Topbrandsdata.map((brand) =>
         
-          <div className='justify-content-center mt-3'>
+          <div className='d-flex justify-content-center pb-5'>
             <img src={brand.imageName} class="card-img-top" alt="..." style={{width: "100px", height: "40px"}}/>
           </div>
         )}

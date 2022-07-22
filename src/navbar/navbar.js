@@ -67,13 +67,13 @@ const Navbar = () => {
     <div className="navbar sticky-top navbar-light d-flex bg-light ">
       <div className="container p-0">
           {/* logo */}
-             <a className="navbar-brand order-2 me-5 pe-5 d-flex align-items-center" href="###">
-              <Link to='/'>
-            <span className="fs-1 ms-2">AR</span> 
-              <img src={process.env.PUBLIC_URL+"logo.svg"} alt="Araktek Logo"/>
-            <span className="fs-1 px-2">KTEK</span> 
-                </Link>  
-          </a>
+          <Link to='/'>
+            <span className="navbar-brand order-2 me-5 pe-5 d-flex align-items-center" href="###">
+              <span className="fs-1 ms-2">AR</span> 
+                <img src={process.env.PUBLIC_URL+"logo.svg"} alt="Araktek Logo"/>
+              <span className="fs-1 px-2">KTEK</span> 
+            </span>
+          </Link>  
           {/* mobile menu */}
           <button 
           className="btn btn-outline-dark vegMenu order-5 p-1 pe-2"
@@ -100,7 +100,7 @@ const Navbar = () => {
             <li className="nav-item me-2 heart-icon">
               <a className="nav-link" href="###">
                 <i className="bi bi-suit-heart"></i>
-                <span className="position-absolute translate-middle badge">{0}</span>
+                <span className="position-absolute translate-middle badge">{''}</span>
               </a>
             </li>
             <li className="nav-item mx-3 cart-icon">
@@ -109,7 +109,7 @@ const Navbar = () => {
                 <i className="bi bi-cart3"></i>
               </Link>
                 {/* badge */}
-                <span className="position-absolute translate-middle badge">{totalItems}</span>
+                <span className="position-absolute translate-middle badge">{totalItems ? totalItems : ''}</span>
               </a>
             </li>
 
