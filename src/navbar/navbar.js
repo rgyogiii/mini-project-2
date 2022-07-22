@@ -67,13 +67,15 @@ const Navbar = () => {
     <div className="navbar sticky-top navbar-light d-flex bg-light ">
       <div className="container p-0">
           {/* logo */}
-          <Link to='/'>
-            <span className="navbar-brand order-2 me-5 pe-5 d-flex align-items-center" href="###">
+          
+            <a className="navbar-brand order-2 me-5 pe-5 d-flex align-items-center logo-name" href="###">
+              <Link to='/'>
               <span className="fs-1 ms-2">AR</span> 
                 <img src={process.env.PUBLIC_URL+"logo.svg"} alt="Araktek Logo"/>
-              <span className="fs-1 px-2">KTEK</span> 
-            </span>
-          </Link>  
+              <span className="fs-1 px-2">KTEK</span>
+              </Link>  
+            </a>
+           
           {/* mobile menu */}
           <button 
           className="btn btn-outline-dark vegMenu order-5 p-1 pe-2"
