@@ -71,6 +71,7 @@ const Final = () => {
                 imageName={item.imageName}
                 ratings={item.ratings}
                 reviewNum={item.reviewNum}
+                item= {item}  
                 />
           ))}
           </Slider> 

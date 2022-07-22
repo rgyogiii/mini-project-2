@@ -2,24 +2,31 @@ import React from 'react'
 import Navbar from './navbar/navbar';
 import Homepage from './homepage/homepage';
 import Footer from './footer/Footer';
-import Productlist from './product/productlist/Productlist';
+import Cart from './cart/cart'
+import { CartProvider } from 'react-use-cart'
+import Productlist from './product/productlist/productlist';
 import  { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Cartpage from './cart/cartpage';
 
-function App() {
+const App = () => {
   return (
-    
+    <div>
     <Router>
-      <Navbar />
-      <div>
-        <img src={process.env.PUBLIC_URL+"/img/creatives/bg-podium.svg"} width="100%" alt="header img"/>
-      </div>
-        <Routes>
-          <Route path='/' element={<Homepage />} />
+      <CartProvider>
+      <Navbar/>
+      <img src={process.env.PUBLIC_URL+"/img/creatives/bg-podium.svg"} width="100%" alt="headerimg"/>
+      <Routes>
+        <Route path='/' element={<Homepage />} />
           <Route path='/product-list' element={<Productlist />} />
-        </Routes>
-      <Footer />
+          <Route path='/cart' element={<Cart/>}/>
+      </Routes>
+      <Footer/>
+    </CartProvider>
     </Router>
+    
+      
+      
+    </div>
   )
 }
-
 export default App

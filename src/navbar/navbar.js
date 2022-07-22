@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = ({ setShow, size }) => {
   const [showMenu, setShowMenu] = useState(false);
-
+  const {totalItems} = useCart();
   const [open, setOpen] = React.useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const handleClick = (event) => {
@@ -103,8 +103,9 @@ const Navbar = ({ setShow, size }) => {
             </li>
             <li className="nav-item mx-3 cart-icon">
               <a className="nav-link" href="###">
+              <Link to='/cart'>
                 <i className="bi bi-cart3"></i>
-
+              </Link>
                 {/* badge */}
                 <span className="position-absolute translate-middle badge">{totalItems}</span>
               </a>
