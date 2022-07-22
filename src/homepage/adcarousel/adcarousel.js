@@ -63,11 +63,7 @@ const adcarousel = () => {
             adimage:' /img/ads/ads12.jpg'
 
         },
-           {
-            id:13,
-            adimage:' /img/ads/ads13.jpg'
 
-        },
     ]
     const settings = {
       dots: true,
@@ -87,7 +83,7 @@ const adcarousel = () => {
      <Slider {...settings}>
         {ads.map((props)=>(
             <div className='ad-image d-flex justify-content-center'>
-                <img src={props.adimage} alt="" srcset="" width='100%' />
+                <img style={{cursor:'pointer'}} src={props.adimage} alt="" srcset="" width='2024px' height='620px' />
             </div>
         ))}
         </Slider>
