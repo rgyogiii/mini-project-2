@@ -1,3 +1,16 @@
 tr td{
     font-family: 'Barlow', sans-serif;
 }
+.trash{
+    color: rgb(124, 2, 2);
+}
+h1{
+    font-size: 48px;
+    font-family: 'Tungsten Bold', sans-serif;
+}
+.btn{
+    font-family: 'Barlow', sans-serif;
+}
+.empty-cart{
+    padding-bottom: 500px;
+}
