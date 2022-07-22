@@ -170,7 +170,9 @@ const Navbar = ({ setShow, size }) => {
                 <a className="nav-link nav-category" href="###">Brands</a>
               </li>
               <li className="nav-item mx-2">
+              <Link to='/promos'>
                 <a className="nav-link nav-category" href="###">Promos</a>
+              </Link>
               </li>
             </ul>
           </div>
