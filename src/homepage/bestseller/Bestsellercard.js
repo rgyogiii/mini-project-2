@@ -27,11 +27,11 @@ const Bestsellercard = (props, i) => {
         <div className='d-flex justify-content-end'>
           <i className="bi bi-heart fav-icon"></i>
         </div>
-        <h5 class="card-title">{props.title}</h5>
+        <h5 class="card-title title fw-bold text-ellipsis">{props.title}</h5>
         <p class="card-text">{props.description}</p>
         <div className='d-flex justify-content-between'>
           <strong>₱{props.price.toLocaleString()}</strong>
-          <div>
+          <div className='d-flex px-2 align-items-center'>
             <Rating
               name="half-rating-read"
               defaultValue={props.ratings}
@@ -42,7 +42,7 @@ const Bestsellercard = (props, i) => {
                 color: "#121111",
               }}  
             />
-            <span className='fs-6 text-muted revNum'>({props.reviewNum})</span>
+            <span className='fs-6 text-muted revNum pt-1'>({props.reviewNum})</span>
           </div>
         </div>
       </div>

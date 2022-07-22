@@ -2,9 +2,20 @@
     max-width: 100%;
 }
 
-@media (max-width: 576px){
-    .ad-image img{
-        max-height: 320px;
+.slick-dots {
+    bottom: 20px !important;
+}
 
-    }
+.slick-dots li button:before {
+    font-size: 15px !important;
+}
+
+.slick-slide>div {
+    margin: 0px !important;
+    max-width: 100% !important;
+}
+
+.slick-list {
+    width: 100%;
+    margin: 0 !important;
 }

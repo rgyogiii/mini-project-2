@@ -31,11 +31,11 @@ const Card = (props, i) => {
         <div className='d-flex justify-content-end mx-3'>
           <i className="bi bi-heart fav-icon"></i>
         </div>
-        <span className='title fw-bold px-1'>{props.title} </span>
+        <span className='title fw-bold px-1 text-ellipsis'>{props.title} </span>
         <div className="price">
           <div className='d-flex justify-content-between'>
           <span className='fs-6 px-1 fw-bold'>₱{props.price.toLocaleString()}</span>
-          <div className='d-flex px-2'>
+          <div className='d-flex px-2 align-items-center'>
             <Rating
             name="half-rating-read"
             defaultValue={props.ratings}
@@ -46,7 +46,7 @@ const Card = (props, i) => {
             color: "#121111",
           }}  
             />
-          <span className='fs-6 text-muted revNum'>({props.reviewNum})</span>
+          <span className='fs-6 text-muted revNum pt-1'>({props.reviewNum})</span>
           </div>
         </div>
         </div>          

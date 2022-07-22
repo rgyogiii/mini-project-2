@@ -7,12 +7,12 @@ import fifth from './promo1/promo1.5.jpg'
 import './promo1.css'
 const promo1 = () => {
   return (
-    <div className='container first-promos mt-5'>
-    <div className='row justify-content-between container first-promos mt-5'>
-      <div className='d-flex col-lg-6 col-md-3 first-row pe-lg-1 pe-md-0 py-1'>
+    <div className='container first-promos my-5 pb-5'>
+    <div className='row justify-content-between my-5'>
+      <div className='d-flex col-lg-6 col-md-3 first-row px-lg-1 px-md-0 py-1'>
           <img width='100%' src={first}/>
       </div>
-      <div className='d-flex col-lg-6 col-md-3 first-row ps-lg-1 pe-md-0 py-1'>
+      <div className='d-flex col-lg-6 col-md-3 first-row px-lg-1 px-md-0 py-1'>
           <img width='100%' src={second}/>
       </div>
     </div>

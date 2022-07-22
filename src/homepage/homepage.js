@@ -8,7 +8,7 @@ import Secondpromo from './promo2/promo2'
 import Adcarousel from './adcarousel/adcarousel'
 const homepage = () => {
   return (
-    <div className="mx-3">
+    <div>
         <Adcarousel/>
         <Feature />
         <Firstpromo/>
