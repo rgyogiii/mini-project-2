@@ -27,7 +27,7 @@ const Cart = () => {
   return (
     <div>
 
-        <div className='py-4 container cart' style={{marginTop:100}}>
+      <div className='py-4 container cart' style={{marginTop:100}}>
       <div className="row justify-content-center">
         <div className="col-12">
           <h1>Total Items: {totalItems}</h1>
