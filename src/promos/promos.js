@@ -77,15 +77,15 @@ const promos = () => {
 
 ]
   return (
-    <div className='container'>
-    <div className='d-flex justify-content-center mb-3'>
-        <h1>Bundles & Promos</h1>
-    </div>
-    {promoImage.map((props)=>(
-        <div className='d-flex flex-direction-column justify-content-center mb-3'>
-            <img style={{cursor:'pointer', minWidth:'375px'}} src={props.image} width='700px' height='300px'/>
+    <div className='container mt-5'>
+        <div className='d-flex justify-content-center mb-3'>
+            <h1>Bundles & Promos</h1>
         </div>
-    ))}
+        {promoImage.map((props)=>(
+            <div className='d-flex flex-direction-column justify-content-center mb-3'>
+                <img style={{cursor:'pointer', minWidth:'375px'}} src={props.image} width='700px' height='300px'/>
+            </div>
+        ))}
     </div>
   )
 }
