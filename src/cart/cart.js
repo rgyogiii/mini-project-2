@@ -42,8 +42,8 @@ const Cart = () => {
                 <td>{item.title}</td>
                 <td>₱{item.price.toLocaleString()}</td>
                 <td>QTY:{item.quantity}</td>
-
-                <button className='btn btn-secondary ms-2' onClick={()=> updateItemQuantity(item.id, item.quantity -1)}>
+                <div className='d-flex'>
+                  <button className='btn btn-secondary ms-2' onClick={()=> updateItemQuantity(item.id, item.quantity -1)}>
                 <i class="bi bi-dash"></i>
                 </button>
                 <button className='btn btn-secondary ms-2' onClick={()=> updateItemQuantity(item.id, item.quantity +1)}>
@@ -52,6 +52,8 @@ const Cart = () => {
                 <button className='btn btn-secondary ms-2' onClick={()=> removeItem(item.id)}>
                 <i class="bi bi-trash3-fill fs-6 trash"></i>
                 </button>
+                </div>
+               
               </tr>)
 
             })}
