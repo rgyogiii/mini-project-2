@@ -9,7 +9,7 @@ const randomReview = () => {
 
 const featuredata = [{
         id: 1,
-        title: 'PlayStation 5 HFW Bundle...',
+        title: 'PlayStation 5 Test ',
         price: 41860,
         imageName: "/img/consoles/console1.jpg",
         ratings: randomStar(),

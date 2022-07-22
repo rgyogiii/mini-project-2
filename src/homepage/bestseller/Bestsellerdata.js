@@ -10,7 +10,7 @@ const randomReview = () => {
 const Bestsellerdata = [
 {
     id: 1,
-    title: 'GDP Pocket 3 i7...',
+    title: 'GDP Pocket 3 i7 Eto yung mahabang title paki ayos na lang',
     price: 54995,
     imageName: "/img/consoles/console10.jpg",
     description: "to follow na lang since single page pa lang naman",
