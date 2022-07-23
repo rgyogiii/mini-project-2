@@ -1,9 +1,6 @@
 tr td{
     font-family: 'Barlow', sans-serif;
 }
-.trash{
-    color: rgb(124, 2, 2);
-}
 h1{
     font-size: 48px;
     font-family: 'Tungsten Bold', sans-serif;
@@ -14,4 +11,8 @@ h1{
 .empty-cart{
     padding-bottom: 500px;
     margin-top: 3rem;
+}
+
+.cart-btn{
+    color: azure !important;
 }
