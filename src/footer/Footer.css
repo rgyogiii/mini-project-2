@@ -12,13 +12,13 @@ a {
 }
 
 .logo-text{
-  font-family: 'Tungsten Bold', sans-serif;
+  font-family: 'Teko', sans-serif;
   letter-spacing: 8px;
   font-size: 38px;
 }
 
 .footer-title{
-  font-family: 'Tungsten Bold', sans-serif;
+  font-family: 'Teko', sans-serif;
   letter-spacing: 4px;
   font-size: 36px;
 }
@@ -29,7 +29,7 @@ a {
 }
 
 .team{
-  font-family: 'Tungsten Bold', sans-serif;
+  font-family: 'Teko', sans-serif;
   letter-spacing: 2px;
 }
 
@@ -44,6 +44,12 @@ a {
 .footer-link{
   font-weight: 500 !important;
   color: #ffffff !important;
+}
+
+.footer span:first-child:hover{
+  text-decoration: none !important;
+  color: #ffffff !important;
+  cursor: auto !important;
 }
 
 /* mobile */
