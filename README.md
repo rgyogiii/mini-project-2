@@ -1,3 +1,3 @@
-# Araktek e-commerce site
+# Araktek E-Commerce Site
 
-This project was handfully created by aracholo group.
+Araktek is an E-Commerce Site created carefully by the Aracholō Group for Gamers, Streamers, Profesional, and Collectors.
