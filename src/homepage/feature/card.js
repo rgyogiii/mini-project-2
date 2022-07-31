@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './feature.css'
 import { useCart } from 'react-use-cart'
 import Rating from "@mui/material/Rating";
-
+import { Link } from 'react-router-dom'
 const Card = (props, i) => {
   const { addItem } = useCart() 
     const [isHovered, setHover] = useState(-1);
@@ -17,7 +17,10 @@ const Card = (props, i) => {
         <div className="image-hover">
           <div onMouseEnter={()=> showButton(i)} onMouseLeave={hideButton}>
             <div className='d-flex justify-content-center'>
+            <Link to='/productitem'>
               <img src={props.imageName} width='250px' height='240px'/>
+            </Link>
+              
             </div> 
             <br/>
             { isHovered === i && (
@@ -31,7 +34,7 @@ const Card = (props, i) => {
         <div className='d-flex justify-content-end mx-3'>
           <i className="bi bi-heart fav-icon"></i>
         </div>
-        <span className='title fw-bold px-1 text-ellipsis'>{props.title} </span>
+        <span className='title-product fw-bold px-1 text-ellipsis'>{props.title} </span>
         <div className="price">
           <div className='d-flex justify-content-between'>
           <span className='fs-6 px-1 fw-bold'>₱{props.price.toLocaleString()}</span>

@@ -1,8 +1,8 @@
-.title {
+.title-product {
     font-size: 22px !important;
     cursor: pointer;
 }
-.title:hover{
+.title-product:hover{
     color:  #707071 !important;
 }
 

@@ -27,7 +27,7 @@ const Bestsellercard = (props, i) => {
         <div className='d-flex justify-content-end'>
           <i className="bi bi-heart fav-icon"></i>
         </div>
-        <h5 class="card-title title fw-bold text-ellipsis">{props.title}</h5>
+        <h5 class="title-product card-title title fw-bold text-ellipsis">{props.title}</h5>
         <p class="card-text">{props.description}</p>
         <div className='d-flex justify-content-between'>
           <strong>₱{props.price.toLocaleString()}</strong>

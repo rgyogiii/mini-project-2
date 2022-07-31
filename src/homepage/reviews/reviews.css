@@ -53,6 +53,11 @@
     color: rgb(0, 0, 0) !important;
 }
 
+.component-title{
+    font-size: 48px;
+    font-family: 'Tungsten Bold', sans-serif;
+}
+
 
 
 
