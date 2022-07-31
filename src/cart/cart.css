@@ -3,7 +3,7 @@ tr td{
 }
 .table-summary h1, .title-total{
     font-size: 48px;
-    font-family: 'Tungsten Bold', sans-serif;
+    font-family: 'Teko', sans-serif;
 }
 
 .table {
@@ -28,16 +28,15 @@ tr td{
 
 .clear-btn{
   max-height: 50px;
-  font-family:'Tungsten Bold', sans-serif;
+  font-family: 'Teko', sans-serif;
   letter-spacing: 1px;
   font-size: 22px;
 }
 .checkout-btn{
   max-height: 50px;
   max-width: 500px;
-  font-family:'Tungsten Bold', sans-serif;
-  letter-spacing: 1px;
-  font-size: 22px;
+  font-family: 'Teko', sans-serif;
+  font-size: 25px;
 }
 
 .cart-box{

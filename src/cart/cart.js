@@ -39,7 +39,7 @@ const Cart = () => {
       <div className='cart-summary py-4 container-fluid cart d-flex'> 
       <div className="row">      
         <div className="col-10 table-summary">
-          <h1>Total Items: {totalItems}</h1>
+          <h1>Total Items- {totalItems}</h1>
           <table className='table table-light m-0'>
           <tbody>
             {items.map((item, index)=>{
