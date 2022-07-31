@@ -7,8 +7,8 @@
 }
 
 .navbar-brand{
-  font-family: 'Tungsten Bold', sans-serif;
-  letter-spacing: 10px;
+  font-family: 'Teko', sans-serif;
+  letter-spacing: 5px;
 }
 
 .navbar-brand:hover{
@@ -244,12 +244,12 @@ form.searchContainer:focus-within{
 }
 
 .menu-list{
-  font-family: 'Tungsten Bold', sans-serif;
-  letter-spacing: 3px;
+  font-family: 'Teko', sans-serif;
+  letter-spacing: 1px;
 }
 
 .menu-list .list-group-item{
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .searchmenu{
