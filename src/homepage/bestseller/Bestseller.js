@@ -12,7 +12,7 @@ let navigate = useNavigate();
     <div className='container my-5'>
       <h1 className="my-5 component-title">Bestseller Products</h1>
      
-        <div className='row justify-content-between'>
+        <div className='row justify-content-between ms-auto'>
           { Bestsellerdata.map((item) =>
     
             <Bestsellercard 

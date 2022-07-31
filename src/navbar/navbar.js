@@ -8,12 +8,17 @@ import './navbar.css';
 import { useCart } from 'react-use-cart'
 import { Link } from 'react-router-dom'
 import feature from '../homepage/feature/card'
+import ModalLogin from '../login/ModalLogin';
+
+
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const {totalItems} = useCart();
   const [open, setOpen] = React.useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [modalShow, setModalShow] = React.useState(false);
+
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
     setOpen((previousOpen) => !previousOpen);
@@ -139,7 +144,7 @@ const Navbar = () => {
                     <MenuItem  onClick={handleClose} className="mx-2">
                       <i class="bi bi-gear fs-5"></i><span className="ms-3">Settings</span>
                     </MenuItem>
-                    <MenuItem  onClick={handleClose} className="mx-2">
+                    <MenuItem onClick={handleClose} className="mx-2">
                       <i class="bi bi-box-arrow-right fs-5"></i><span className="ms-3">Logout</span>
                     </MenuItem>
                   </Paper>
@@ -147,6 +152,18 @@ const Navbar = () => {
             </li>
 
           </ul>
+
+          <ModalLogin 
+            show={modalShow}
+            onHide={() => setModalShow(false)}
+          
+          />
+
+          {/* <login
+            show={modalShow}
+            onHide={() => setModalShow(false)}
+          /> */}
+        
 
           {/* category */}
           <div className="container pt-2 d-flex justify-content-center order-4 nav-category" id="burgerMenu">
