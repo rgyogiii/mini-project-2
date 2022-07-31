@@ -145,7 +145,7 @@ tr td{
   background-color: crimson;
 }
 .title h1{
-  font-size: 48px;
-  font-family: 'Tungsten Bold', sans-serif;
+  font-size: 38px;
+  font-family: 'Barlow', sans-serif;
   cursor: default !important;
 }
