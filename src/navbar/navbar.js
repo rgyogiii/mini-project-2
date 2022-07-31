@@ -54,14 +54,14 @@ const Navbar = () => {
       </div>
 
       <div className="list-group d-flex align-items-center menu-list">
-        <a className="list-group-item border-0 py-1" href="###">Sale</a>
-        <a className="list-group-item border-0 py-1" href="###">Pre-Built PC</a>
-        <a className="list-group-item border-0 py-1" href="###">Laptops</a>
-        <a className="list-group-item border-0 py-1" href="###">Consoles</a>
-        <a className="list-group-item border-0 py-1" href="###">Accessories</a>
-        <a className="list-group-item border-0 py-1" href="###">Collectibles</a>
-        <a className="list-group-item border-0 py-1" href="###">Brands</a>
-        <a className="list-group-item border-0 py-1" href="###">Promos</a>
+        <a className="list-group-item border-0 py-0" href="###">Sale</a>
+        <a className="list-group-item border-0 py-0" href="###">Pre-Built PC</a>
+        <a className="list-group-item border-0 py-0" href="###">Laptops</a>
+        <a className="list-group-item border-0 py-0" href="###">Consoles</a>
+        <a className="list-group-item border-0 py-0" href="###">Accessories</a>
+        <a className="list-group-item border-0 py-0" href="###">Collectibles</a>
+        <a className="list-group-item border-0 py-0" href="###">Brands</a>
+        <a className="list-group-item border-0 py-0" href="###">Promos</a>
       </div>
     </div>
   }

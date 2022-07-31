@@ -1,8 +1,8 @@
-.title {
+.title-product {
     font-size: 22px !important;
     cursor: pointer;
 }
-.title:hover{
+.title-product:hover{
     color:  #707071 !important;
 }
 
@@ -56,7 +56,7 @@
 }
 .final h1{
     font-size: 48px;
-    font-family: 'Tungsten Bold', sans-serif;
+    font-family: 'Teko', sans-serif;
 }
 .revNum{
     position: relative;
