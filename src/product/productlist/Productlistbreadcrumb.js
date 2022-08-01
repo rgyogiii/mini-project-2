@@ -1,7 +1,18 @@
+import { color } from '@mui/system';
 import React, {useState} from 'react'
+import Productlistitem from './Productlistitem';
 
-const Productlistbreadcrumb = () => {
+const Productlistbreadcrumb = (props) => {
   const [showFilter, setShowFilter] = useState(false);
+
+
+  const handleClick = (clickColor) => {
+    console.log(clickColor)
+    return clickColor
+  }
+
+
+ 
   return (
     <div>
 
@@ -20,7 +31,7 @@ const Productlistbreadcrumb = () => {
               </ol>
           </nav>
       </div>
-      <div className={showFilter ? 'row mb-5' : 'row mb-5 d-none'}>
+      <div className={showFilter ? 'row mb-5 filter' : 'row mb-5 filter d-none'}>
         <div className='col-3 d-flex flex-column'>
             <h6>Sort By</h6>
             <span>Default</span>
@@ -41,12 +52,12 @@ const Productlistbreadcrumb = () => {
         </div>
         <div className='col-3 d-flex flex-column'>
             <h6>Color</h6>
-            <span>Blue</span>
-            <span>Brown</span>
-            <span>Gray</span>
-            <span>Green</span>
-            <span>Orange</span>
-            <span>White</span>
+            <button className='btn border-0 text-start ps-0' onClick={() => {props.filterFunction(handleClick("blue"))}}>Blue</button>
+            <button className='btn border-0 text-start ps-0' onClick={() => {props.filterFunction(handleClick("brown"))}}>Brown</button>
+            <button className='btn border-0 text-start ps-0' onClick={() => {props.filterFunction(handleClick("gray"))}}>Gray</button>
+            <button className='btn border-0 text-start ps-0' onClick={() => {props.filterFunction(handleClick("green"))}}>Green</button>
+            <button className='btn border-0 text-start ps-0' onClick={() => {props.filterFunction(handleClick("orange"))}}>Orange</button>
+            <button className='btn border-0 text-start ps-0' onClick={() => {props.filterFunction(handleClick("black"))}}>Black</button>
         </div>
         <div className='col-3'>
             <h6>Tags</h6>
@@ -64,4 +75,5 @@ const Productlistbreadcrumb = () => {
   )
 }
 
-export default Productlistbreadcrumb
+
+export default Productlistbreadcrumb;

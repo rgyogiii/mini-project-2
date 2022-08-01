@@ -14,6 +14,8 @@ const Bestsellerdata = [
     price: 54995,
     imageName: "/img/consoles/console10.jpg",
     description: "to follow na lang since single page pa lang naman",
+    category: "Laptop",
+    color: "pink",
     ratings: randomStar(),
     reviewNum: randomReview()
 },
@@ -23,6 +25,8 @@ const Bestsellerdata = [
     price: 3295,
     imageName: "/img/collectibles/collectible6.jpg",
     description: "to follow na lang since single page pa lang naman",
+    category: "Collectibles",
+    color: "black",
     ratings: randomStar(),
     reviewNum: randomReview()
 },
@@ -33,6 +37,8 @@ const Bestsellerdata = [
     price: 79995,
     imageName: "/img/prebuilt/prebuilt3.jpg",
     description: "to follow na lang since single page pa lang naman",
+    category: "Pre-Built PC",
+    color: "white",
     ratings: randomStar(),
     reviewNum: randomReview()
 },
@@ -43,6 +49,8 @@ const Bestsellerdata = [
     price: 74999,
     imageName: "/img/laptop/laptop7.jpg",
     description: "to follow na lang since single page pa lang naman",
+    category: "Laptop",
+    color: "black",
     ratings: randomStar(),
     reviewNum: randomReview()
 },
@@ -52,6 +60,8 @@ const Bestsellerdata = [
     price: 53899,
     imageName: "/img/laptop/laptop8.jpg",
     description: "to follow na lang since single page pa lang naman",
+    category: "Laptop",
+    color: "red",
     ratings: randomStar(),
     reviewNum: randomReview()
 },
@@ -61,6 +71,8 @@ const Bestsellerdata = [
     price: 46995,
     imageName: "/img/prebuilt/prebuilt6.jpg",
     description: "to follow na lang since single page pa lang naman",
+    category: "Laptop",
+    color: "blue",
     ratings: randomStar(),
     reviewNum: randomReview()
 },
@@ -70,6 +82,8 @@ const Bestsellerdata = [
     price: 99995,
     imageName: "/img/laptop/laptop9.jpg",
     description: "to follow na lang since single page pa lang naman",
+    category: "Laptop",
+    color: "green",
     ratings: randomStar(),
     reviewNum: randomReview()
 },
@@ -79,6 +93,8 @@ const Bestsellerdata = [
     price: 9495,
     imageName: "/img/collectibles/collectible4.jpg",
     description: "to follow na lang since single page pa lang naman",
+    category: "Collectibles",
+    color: "blue",
     ratings: randomStar(),
     reviewNum: randomReview()
 }

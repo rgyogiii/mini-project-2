@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Rating from "@mui/material/Rating";
 import { useCart } from 'react-use-cart'
+
 const Bestsellercard = (props, i) => {
   const { addItem } = useCart() 
   const [isHovered, setHover] = useState(-1);
